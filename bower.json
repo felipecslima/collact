@@ -1,0 +1,13 @@
+{
+  "name": "collact-css",
+  "homepage": "https://github.com/felipecslima/collact",
+  "authors": [
+    "Joel <lfj182@gmail.com>"
+  ],
+  "description": "collact base css",
+  "main": "utils.css",
+  "keywords": [
+    "collact"
+  ],
+  "license": "MIT"
+}
