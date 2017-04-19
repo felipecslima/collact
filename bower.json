@@ -1,6 +1,12 @@
 {
   "name": "collact-css",
   "homepage": "https://github.com/felipecslima/collact",
+  "version": "1.0.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
   "authors": [
     "Joel <lfj182@gmail.com>"
   ],
