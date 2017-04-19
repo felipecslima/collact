@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : felipe
 */
 html body .margin-none {
-  margin: 0;
+  margin: 0 !important;
 }
 html body .margin-8 {
   margin: 8px;
@@ -20,7 +20,7 @@ html body .margin-24 {
   margin: 24px;
 }
 html body .margin-top-none {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 html body .margin-top-8 {
   margin-top: 8px;
@@ -32,7 +32,7 @@ html body .margin-top-24 {
   margin-top: 24px;
 }
 html body .margin-right-none {
-  margin-right: 0;
+  margin-right: 0 !important;
 }
 html body .margin-right-8 {
   margin-right: 8px;
@@ -44,7 +44,7 @@ html body .margin-right-24 {
   margin-right: 24px;
 }
 html body .margin-bottom-none {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 html body .margin-bottom-8 {
   margin-bottom: 8px;
@@ -56,7 +56,7 @@ html body .margin-bottom-24 {
   margin-bottom: 24px;
 }
 html body .margin-left-none {
-  margin-left: 0;
+  margin-left: 0 !important;
 }
 html body .margin-left-8 {
   margin-left: 8px;
@@ -68,7 +68,7 @@ html body .margin-left-24 {
   margin-left: 24px;
 }
 html body .padding-none {
-  padding: 0;
+  padding: 0 !important;
 }
 html body .padding-8 {
   padding: 8px;
@@ -80,7 +80,7 @@ html body .padding-24 {
   padding: 24px;
 }
 html body .padding-top-none {
-  padding-top: 0;
+  padding-top: 0 !important;
 }
 html body .padding-top-8 {
   padding-top: 8px;
@@ -92,7 +92,7 @@ html body .padding-top-24 {
   padding-top: 24px;
 }
 html body .padding-right-none {
-  padding-right: 0;
+  padding-right: 0 !important;
 }
 html body .padding-right-8 {
   padding-right: 8px;
@@ -104,7 +104,7 @@ html body .padding-right-24 {
   padding-right: 24px;
 }
 html body .padding-bottom-none {
-  padding-bottom: 0;
+  padding-bottom: 0 !important;
 }
 html body .padding-bottom-8 {
   padding-bottom: 8px;
@@ -116,7 +116,7 @@ html body .padding-bottom-24 {
   padding-bottom: 24px;
 }
 html body .padding-left-none {
-  padding-left: 0;
+  padding-left: 0 !important;
 }
 html body .padding-left-8 {
   padding-left: 8px;
