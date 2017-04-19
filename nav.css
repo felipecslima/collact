@@ -1,0 +1,121 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 31, 2017, 2:20:15 PM
+    Author     : felipe
+*/
+md-sidenav,
+md-backdrop {
+  position: fixed !important;
+}
+.md-sidenav-left {
+  background-color: #FAFAFA;
+  width: 256px;
+}
+.md-sidenav-left md-toolbar {
+  background-color: #ee003e;
+  padding-bottom: 16px;
+}
+.md-sidenav-left md-toolbar img {
+  margin-bottom: 12px;
+}
+.md-sidenav-left md-toolbar h2 {
+  color: #fff;
+}
+.md-sidenav-left md-toolbar span {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.59);
+}
+.md-sidenav-left md-list {
+  padding-top: 0px;
+  padding-bottom: 16px;
+}
+.md-sidenav-left md-list md-list-item {
+  padding: 0 24px !important;
+}
+.md-sidenav-left md-list md-list-item.md-list-first-item {
+  margin-top: 8px;
+}
+.md-sidenav-left md-list md-list-item i {
+  margin-right: 24px;
+  width: 24px;
+  float: left;
+}
+.md-sidenav-left md-list md-list-item md-icon {
+  margin-right: 24px;
+  color: #9e9e9e;
+}
+.md-sidenav-left md-list md-list-item a {
+  color: #9e9e9e;
+  font-size: 16px;
+  text-decoration: none;
+  width: 100%;
+  line-height: 25px;
+  display: block;
+}
+.md-sidenav-left md-list md-list-item:hover {
+  background: #efefef;
+}
+.md-sidenav-left md-list md-list-item.active {
+  background: #efefef;
+}
+.md-sidenav-left md-list md-list-item.active a {
+  color: #676767;
+}
+.md-sidenav-left md-list.last {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.md-sidenav-left md-list.last md-list-item img {
+  width: 40px;
+  margin-right: 8px;
+  border-radius: 2px;
+  border: solid 1px rgba(0, 0, 0, 0.05);
+}
+.md-sidenav-left md-list.last md-list-item h3 {
+  margin: 0;
+  font-family: "ProximaNovaSemiBold";
+  font-size: 16px;
+  color: #676767;
+  width: 160px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.md-sidenav-left md-list.last md-list-item h4 {
+  margin: 0;
+  font-family: "ProximaNova";
+  font-size: 14px;
+  color: #9e9e9e;
+  font-weight: normal;
+  width: 160px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.md-sidenav-left md-list.last md-list-item .md-button {
+  height: 46px;
+  border-radius: 2px;
+  background-color: #98e0da;
+  margin: 4px 0 0 0;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.35) !important;
+  box-shadown: none;
+}
+.md-sidenav-left md-list.last md-list-item .md-button md-icon {
+  color: rgba(0, 0, 0, 0.35) !important;
+  margin-right: 8px;
+}
+@media screen and (max-width: 600px) {
+  html body .md-sidenav-left md-toolbar {
+    min-height: 149px;
+  }
+  html body .md-sidenav-left md-list.last {
+    position: relative;
+  }
+}
+/*# sourceMappingURL=nav.css.map */

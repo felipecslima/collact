@@ -1,0 +1,65 @@
+*.sw*
+*~
+# OS generated files #
+######################
+*.log
+node_modules
+build
+*.node
+components
+coverage
+*.orig
+.idea
+sandbox
+test/out-fixtures/*
+test/watch-*.txt
+gulp.1
+
+
+# --------------------
+# OSX Files
+# --------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# --------------------
+# Netbeans Files
+# --------------------
+
+nbproject/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+
+nb-configuration.xml
+.netbeans.xml
+
+# --------------------
+# Node Files
+# --------------------
+.nodemonignore
+npm-debug.log
+node_modules/
+
+
+
+# --------------------
+# vim Files
+# --------------------
+*.swp
+
+# --------------------
+# Yeoman
+# --------------------
+.tmp
+bower_components
+
+
+*.map

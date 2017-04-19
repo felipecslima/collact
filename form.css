@@ -1,0 +1,330 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 31, 2017, 11:42:21 AM
+    Author     : felipe
+*/
+md-checkbox.md-checked .md-icon {
+  background-color: #41918A;
+}
+md-checkbox.md-checked .md-icon:after {
+  border-color: #ededed;
+}
+md-checkbox .md-label {
+  color: #676767;
+  font-weight: normal;
+  font-family: "ProximaNovaLight";
+}
+md-checkbox .md-label a {
+  color: #41918a;
+}
+button md-checkbox {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+div.upload {
+  margin: 0  0 24px 0;
+}
+div.upload label {
+  font-size: 13px;
+  font-family: Verdana;
+  color: #64bcb4;
+  margin-bottom: 8px;
+  display: block;
+}
+div.upload .text-helper {
+  font-size: 13px;
+  font-family: Verdana;
+  color: #9e9e9e;
+  margin-top: 8px;
+  display: block;
+}
+div.upload .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: dashed 1px #9e9e9e;
+}
+div.upload .icon i {
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.16);
+}
+div.upload .image-wrap {
+  max-height: 120px;
+  overflow: hidden;
+  border-radius: 4px;
+  height: 120px;
+  max-width: 120px;
+  padding: 0;
+  position: relative;
+  width: 120px;
+  border: solid 2px rgba(0, 0, 0, 0.16);
+  display: block;
+}
+div.upload .image-wrap img {
+  width: 100%;
+  border-radius: 4px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+}
+div.upload .image-wrap .edit {
+  cursor: pointer;
+  width: 120px;
+  height: 48px;
+  border-radius: 4px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  font-family: "ProximaNovaSemiBold";
+  line-height: 1;
+}
+div.upload .image-wrap .edit .material-icons {
+  margin-right: 8px;
+}
+div.upload .image-wrap .edit span {
+  margin-top: 1px;
+}
+md-input-container.md-default-theme:not(.md-input-invalid).md-input-focused .md-input,
+md-input-container:not(.md-input-invalid).md-input-focused .md-input,
+md-input-container.md-default-theme:not(.md-input-invalid).md-input-resized .md-input,
+md-input-container:not(.md-input-invalid).md-input-resized .md-input {
+  border-bottom-color: #64BCB4 !important;
+}
+md-input-container.md-default-theme:not(.md-input-invalid).md-input-focused label,
+md-input-container:not(.md-input-invalid).md-input-focused label,
+md-input-container.md-default-theme:not(.md-input-invalid).md-input-focused md-icon,
+md-input-container:not(.md-input-invalid).md-input-focused md-icon {
+  color: #64BCB4 !important;
+}
+md-radio-button.md-default-theme:not([disabled]).md-primary .md-on,
+md-radio-button:not([disabled]).md-primary .md-on,
+md-radio-button.md-default-theme:not([disabled]) .md-primary .md-on,
+md-radio-button:not([disabled]) .md-primary .md-on,
+md-radio-group.md-default-theme:not([disabled]).md-primary .md-on,
+md-radio-group:not([disabled]).md-primary .md-on,
+md-radio-group.md-default-theme:not([disabled]) .md-primary .md-on,
+md-radio-group:not([disabled]) .md-primary .md-on {
+  background-color: #41918a !important;
+}
+form button,
+form select,
+form html,
+form textarea,
+form input {
+  font-family: "ProximaNova";
+}
+form md-input-container.md-input-focused label:not(.md-no-float),
+form md-input-container.md-input-has-value label:not(.md-no-float) {
+  transform: translate3d(0, 6px, 0) scale(0.9);
+}
+form md-input-container .md-input-message-animation,
+form md-input-container .md-char-counter {
+  font-size: 13px;
+}
+form .md-char-counter {
+  color: #9E9E9E;
+}
+form md-select .md-select-value,
+form md-input-container .md-input,
+form .md-select-value > span:not(.md-select-icon) .md-text {
+  color: #676767;
+  border-color: #9E9E9E;
+}
+form .md-select-value > span.md-select-icon {
+  color: rgba(0, 0, 0, 0.35);
+}
+form .side-by-side md-input-container {
+  padding: 2px 12px;
+}
+form .side-by-side md-input-container:first-of-type {
+  padding: 2px 12px 2px 2px;
+}
+form .side-by-side md-input-container:last-of-type {
+  padding: 2px 2px 2px 12px;
+}
+form .side-by-side md-input-container + md-input-container label:not(.md-no-float):not(.md-container-ignore),
+form .side-by-side md-input-container + md-input-container .hint {
+  padding-left: 12px;
+}
+form .larguraX {
+  color: #676767;
+  font-size: 16px;
+  position: absolute;
+  margin: 6px 0 0 1.2px;
+}
+form label.active {
+  transform: translate3d(0, 6px, 0) scale(0.9) !important;
+  color: rgba(0, 0, 0, 0.54);
+}
+form .checkbox-all label.title {
+  display: block;
+  font-family: Verdana;
+  font-size: 13px;
+  line-height: 16px;
+  color: #9E9E9E;
+  margin-bottom: 16px;
+}
+form .checkbox-all md-checkbox {
+  margin-bottom: 8px;
+}
+form .checkbox-all md-checkbox .md-label {
+  color: #9E9E9E;
+  font-size: 16px;
+}
+form md-checkbox {
+  margin-top: 8px;
+}
+form md-checkbox .md-label {
+  color: #8c8c8c;
+}
+form md-checkbox + .error {
+  margin-top: -15px;
+  margin-left: 30px;
+  font-size: 13px;
+  color: #e83b3f;
+  margin-bottom: 24px;
+}
+form md-radio-group {
+  margin-top: 14px;
+}
+form md-radio-group md-radio-button .md-label {
+  color: #676767;
+  font-size: 16px;
+}
+form .footer-form {
+  background-color: #F5F5F5;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.08), 0 -2px 2px 0 rgba(0, 0, 0, 0.16);
+}
+form .footer-form.fixed {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+md-input-container {
+  /* NOTE: Check the demo's HTML to see some additional RTL support CSS */
+  /* Setup animations similar to the ng-messages */
+}
+md-input-container .hint {
+  display: none;
+}
+md-input-container.md-input-focused:not(.md-input-invalid) .hint {
+  /* Position the hint */
+  display: block;
+  position: absolute;
+  left: 2px;
+  right: auto;
+  bottom: 7px;
+  /* Copy styles from ng-messages */
+  font-size: 13px;
+  font-family: "Verdana";
+  line-height: 14px;
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+  /* Set our own color */
+  color: rgba(0, 0, 0, 0.35);
+}
+md-input-container .hint.ng-hide,
+md-input-container .hint.ng-enter,
+md-input-container .hint.ng-leave.ng-leave-active {
+  bottom: 26px;
+  opacity: 0;
+}
+md-input-container .hint.ng-leave,
+md-input-container .hint.ng-enter.ng-enter-active {
+  bottom: 7px;
+  opacity: 1;
+}
+md-input-container i.for-input {
+  position: absolute;
+  right: 5px;
+  top: 3px;
+  display: none;
+}
+md-input-container input.ng-untouched.ng-empty + div + i.for-input {
+  color: #9e9e9e;
+}
+md-input-container input.ng-touched.ng-invalid + div + i.for-input {
+  color: #dd2c00;
+  display: block;
+}
+md-input-container input.ng-valid.ng-valid-cpf + div + i + i.for-input,
+md-input-container input.ng-valid + div + i + i.for-input {
+  color: #41918a;
+  display: block;
+}
+md-autocomplete[md-floating-label] {
+  height: 70px !important;
+}
+.form-card {
+  width: 100%;
+}
+.form-card .footer {
+  box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05);
+  background-color: #f5f5f5;
+  padding: 24px;
+}
+.form-card .footer .md-button {
+  line-height: 1.1;
+  font-size: 16px;
+  font-family: "ProximaNovaSemiBold";
+  margin-top: 0;
+  padding: 8px;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+.search-input md-input-container {
+  overflow: hidden;
+  height: 40px;
+  margin: 0 0 0 0;
+  padding: 0 36px;
+}
+.search-input md-input-container.md-input-focused label {
+  display: none !important;
+}
+.search-input md-input-container.md-input-has-placeholder label {
+  display: none !important;
+}
+.search-input md-input-container.md-input-has-value label {
+  display: none !important;
+}
+.search-input md-input-container input {
+  margin: 0;
+  font-family: "ProximaNova";
+  width: 100%;
+  color: #676767;
+}
+.search-input md-input-container .md-errors-spacer {
+  display: none;
+}
+.search-input md-input-container md-icon {
+  color: rgba(0, 0, 0, 0.54);
+}
+.search-input md-input-container.md-icon-right > md-icon:last-of-type {
+  margin: 0;
+  right: 1px;
+  left: auto;
+  top: 7px;
+}
+@media screen and (max-width: 600px) {
+  md-input-container.md-input-focused:not(.md-input-invalid) .hint {
+    bottom: -8px;
+    left: -2px;
+    padding-left: 5px;
+  }
+}
+/*# sourceMappingURL=form.css.map */

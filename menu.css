@@ -1,0 +1,173 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 8, 2017, 11:18:18 AM
+    Author     : felipe
+*/
+.nav-drawer-min {
+  background-color: #fafafa;
+  box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.16), 0 0 2px 0 rgba(0, 0, 0, 0.08);
+  z-index: 10;
+  width: 72px;
+  float: left;
+  position: fixed;
+  top: 64px;
+  height: calc(100% - 64px);
+  padding-top: 0;
+  background: #FAFAFA;
+}
+.nav-drawer-min .md-button {
+  padding: 0;
+  width: 100%;
+  height: 48px !important;
+  min-height: inherit;
+  border-radius: 0 !important;
+  border-radius: 0;
+  margin: 0;
+  line-height: normal;
+  min-width: 1px;
+  display: flex;
+}
+.nav-drawer-min .md-button:first-of-type {
+  margin-top: 12px;
+}
+.nav-drawer-min .md-button:last-of-type {
+  position: absolute;
+  bottom: 0;
+}
+.nav-drawer-min .md-button i {
+  margin: 0 auto;
+}
+.nav-drawer-min .md-button md-icon {
+  color: #9e9e9e;
+}
+.nav-drawer-min .md-button:hover md-icon {
+  color: #41918A;
+}
+.nav-drawer-min.fixed {
+  position: fixed;
+  top: 0;
+  height: 100%;
+}
+.cl-icon {
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+.cl-icon.home {
+  background-image: url(../images/home.png);
+  background-size: 24px 24px;
+}
+.cl-icon.home.active {
+  background-image: url(../images/home-active.png);
+}
+.cl-icon.user {
+  background-image: url(../images/user.png);
+  background-size: 24px 24px;
+}
+.cl-icon.user.active {
+  background-image: url(../images/user-active.png);
+}
+.cl-icon.gift {
+  background-image: url(../images/gift.png);
+  background-size: 24px 24px;
+}
+.cl-icon.gift.active {
+  background-image: url(../images/gift-active.png);
+}
+.cl-icon.tablet {
+  background-image: url(../images/tablet.png);
+  background-size: 24px 24px;
+}
+.cl-icon.tablet.active {
+  background-image: url(../images/tablet-active.png);
+}
+.cl-icon.analytics {
+  background-image: url(../images/visao-geral.png);
+  background-size: 24px 24px;
+}
+.cl-icon.analytics.active {
+  background-image: url(../images/visao-geral-active.png);
+}
+.cl-icon.feature {
+  background-image: url(../images/cl-feature.png);
+  background-size: 24px 24px;
+}
+.cl-icon.feature.active {
+  background-image: url(../images/cl-feature-active.png);
+}
+.cl-icon.ghost {
+  background-image: url(../images/ghost-icon.png);
+  background-size: 24px 24px;
+}
+.cl-icon.ghost.active {
+  background-image: url(../images/ghost-icon-active.png);
+}
+.cl-icon.ghost-outline {
+  background-image: url(../images/cl-ghost-outline.png);
+  background-size: 24px 24px;
+}
+.cl-icon.ghost-outline.active {
+  background-image: url(../images/cl-ghost-outline-active.png);
+}
+.cl-icon.piloto-automatico {
+  background-image: url(../images/cl-piloto-automatico.png);
+  background-size: 24px 24px;
+}
+.cl-icon.piloto-automatico.active {
+  background-image: url(../images/cl-piloto-automatico-active.png);
+}
+.cl-icon.sirene {
+  background-image: url(../images/cl-sirene.png);
+  background-size: 24px 24px;
+}
+.cl-icon.sirene.active {
+  background-image: url(../images/cl-sirene-active.png);
+}
+.cl-icon.matriz {
+  background-image: url(../images/business.png);
+  background-size: 24px 24px;
+}
+body .md-toolbar-tools.menu-principal .menu-icon {
+  width: 24px;
+  margin-left: 8px !important;
+}
+body .md-toolbar-tools.menu-principal .logo-img {
+  padding: 0;
+  margin-left: 22px;
+  margin-top: 4px;
+}
+@media screen and (max-width: 1280px) {
+  html body md-content.adjust-content {
+    margin-left: 0;
+  }
+  html body .full-on-no-data {
+    width: calc(100% - 48px);
+  }
+}
+@media (max-width: 959px) and (min-width: 0) and (orientation: landscape) {
+  .md-toolbar-tools {
+    height: 64px;
+    max-height: 64px;
+  }
+}
+@media (max-width: 959px) and (min-width: 0) and (orientation: portrait) {
+  .md-toolbar-tools {
+    height: 64px;
+    max-height: 64px;
+  }
+}
+@media screen and (max-width: 600px) {
+  html body md-content.adjust-content {
+    margin-left: 0;
+  }
+  html body .full-on-no-data {
+    width: calc(100% - 16px);
+    height: calc(100% - 82px);
+  }
+}
+/*# sourceMappingURL=menu.css.map */

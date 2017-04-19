@@ -1,0 +1,223 @@
+.md-button {
+    padding: 0 8px;
+    margin: 0;
+    min-width: 88px;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: center;
+    text-transform: none;
+    text-decoration:none;
+    border: none;
+    outline: none;
+    color: #41918a;
+    font-family: "ProximaNovaSemiBold";
+    font-size: 16px;
+    line-height: 1.1;
+    border-radius: 2px;
+    &:not(.md-raised){
+        margin: 6px 8px 6px 8px;
+    }
+    -webkit-transition:	all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+
+    span{
+        vertical-align: text-bottom;
+    }
+    .md-ripple-container + .md-ripple-container{
+        display: none !important;
+    }
+    md-icon{
+        /*color: #41918a !important;*/
+        img{
+            width: 24px;
+            height: 24px;
+            vertical-align: super;
+        }
+    }
+
+    &:not([disabled]):hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    &.md-icon-button {
+        margin: 0 0px 0 24px !important;
+        height: 24px;
+        min-width: 0;
+        line-height: 24px;
+        padding: 0;
+        width: 24px;
+        border-radius: 50%;
+        min-height: 0;
+    }
+
+    &.md-raised:not([disabled]) {
+        box-shadow: none;
+        background: #64bcb4;
+        color: #fff;
+        padding: 14.5px 16px;
+        line-height: 1;
+
+        md-icon{
+            color: rgba(0, 0, 0, 0.35);
+        }
+
+        &:hover {
+            background: #64bcb4;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+        }
+
+        &.icon{
+            padding: 11px 16px;
+            &.only{
+                padding: 6px 8px;
+                min-width: 0;
+            }
+        }
+
+        &.light{
+            background: #98e0da;
+            color: rgba(0, 0, 0, 0.35);
+        }
+
+        &.flat{
+            background: transparent;
+            color: #41918a;
+        }
+
+        &.dense{
+            padding: 6px 16px;
+        }
+
+        &.white{
+            padding: 6px 8px;
+            background-color: transparent;
+            color: #41918a !important;
+            font-family: "ProximaNovaSemiBold";
+            span{
+                color: #41918a !important;
+                font-family: "ProximaNovaSemiBold";
+            }
+            md-icon{
+                color: #41918a !important;
+            }
+            &:not([disabled]).md-raised.md-focused, &:not([disabled]).md-fab.md-focused {
+                background: #ffffff;
+            }
+            &:hover,
+            &:focus{
+                background-color: rgba(0,0,0,0.05);
+                box-shadow: none;
+            }
+        }
+
+        &.opacity{
+            &-404{
+                background-color:rgba(0, 0, 0, 0.1);
+                border: solid 1px #ffffff;
+                color: #ffffff;
+                padding-left:32px;
+                padding-right:32px;
+                &:not([disabled]).md-raised.md-focused, &:not([disabled]).md-fab.md-focused {
+                    background-color:rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+
+        &.full{
+            width: 100%;
+            display: block;
+        }
+        &.no{
+            &-margin{
+                margin: 0;
+            }
+            &-padding{
+                &-vertical{
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+    &:not([disabled]).md-raised.md-focused, &:not([disabled]).md-fab.md-focused {
+        background: #64bcb4;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+    }
+
+    &.bt-edit{
+        padding: 0;
+        width: 24px;
+        height: 24px;
+        min-width: 0;
+        min-height: 0;
+        line-height: 1.1;
+        md-icon{
+            color: rgba(0,0,0,0.35);
+        }
+        &:hover{
+            md-icon{
+                color: #41918a;
+            }    
+        }
+    }
+}
+.md-button[disabled] {
+    color : rgba(0, 0, 0, 0.16);
+    background-color: transparent;
+}
+
+.md-toolbar-tools > .md-button:last-child {
+    margin-right: 8px;
+}
+.md-toolbar-tools > .md-button:first-child{
+    margin-left: 0 !important;
+}
+
+md-fab-speed-dial{
+    &.md-fab-bottom-right{
+        right: 40px;
+    }
+}
+
+md-menu-item > .md-button {
+    margin: 0 !important;
+}
+
+
+.mfb-component__button--main, .mfb-component__button--child{
+    background: #64bcb4;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.mfb-component__child-icon, .mfb-component__child-icon {
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.mfb-component__button--child{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mfb-component__list > li{
+    right: 7px;
+    margin: 21px 0;
+    &:first-of-type{
+        top: -15px; 
+    }
+}
+
+.mfb-component--br .mfb-component__list [data-mfb-label]:after, .mfb-component--tr .mfb-component__list [data-mfb-label]:after {
+    content: attr(data-mfb-label);
+    right: 57px;
+}
+
+.mfb-component--br {
+    right: 24px;
+}
