@@ -1,7 +1,7 @@
 {
   "name": "collact-css",
   "homepage": "https://github.com/felipecslima/collact",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "ignore": [
     "**/.*",
     "node_modules",
