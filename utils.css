@@ -8,6 +8,16 @@ and open the template in the editor.
     Author     : felipe
 */
 @import "form.css";
+.layout-padding-gt-sm,
+.layout-padding-md,
+.layout-padding > *,
+.layout-padding-gt-sm > *,
+.layout-padding-md > *,
+.layout-padding > .flex,
+.layout-padding > .flex-gt-sm,
+.layout-padding > .flex-md {
+  padding: 0;
+}
 html body .margin-none {
   margin: 0 !important;
 }
@@ -128,18 +138,11 @@ html body .padding-left-16 {
 html body .padding-left-24 {
   padding-left: 24px;
 }
-html body .layout-padding-gt-sm,
-html body .layout-padding-md,
-html body .layout-padding > *,
-html body .layout-padding-gt-sm > *,
-html body .layout-padding-md > *,
-html body .layout-padding > .flex,
-html body .layout-padding > .flex-gt-sm,
-html body .layout-padding > .flex-md {
-  padding: 0;
-}
 html body .layout-padding {
   padding: 24px;
+}
+html body .layout-padding-no {
+  padding: 0;
 }
 html body .layout-padding-no-top {
   padding: 0 24px 24px 24px;

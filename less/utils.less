@@ -72,6 +72,19 @@ and open the template in the editor.
 @purple-600: #4F435B;
 @purple-800: #3D3545;
 
+
+ //####### RESET #############
+.layout-padding-gt-sm, 
+.layout-padding-md, 
+.layout-padding > *, 
+.layout-padding-gt-sm > *, 
+.layout-padding-md > *,
+.layout-padding > .flex,
+.layout-padding > .flex-gt-sm,
+.layout-padding > .flex-md {
+    padding: 0;
+}
+
 html{
     body{
         //####### MARGINS #############
@@ -139,20 +152,10 @@ html{
         }
 
         //####### LAYOUT PADDING #######
-        .layout-padding-gt-sm, 
-        .layout-padding-md, 
-        .layout-padding > *, 
-        .layout-padding-gt-sm > *, 
-        .layout-padding-md > *,
-        .layout-padding > .flex,
-        .layout-padding > .flex-gt-sm,
-        .layout-padding > .flex-md {
-            padding: 0;
-        }
-
         .layout-padding{
             padding: @basePadding;
             &-no{
+                padding: 0;
                 &-top{padding: 0 @basePadding @basePadding @basePadding;}
                 &-right{padding: @basePadding 0 @basePadding @basePadding;}
                 &-bottom{padding: @basePadding @basePadding 0 @basePadding;}
@@ -705,7 +708,7 @@ html{
                 }
             }
         }
-        
+
         //############ SUBHEADER #############
         .md-icon{
             color: rgba(0,0,0,0.35);
