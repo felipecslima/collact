@@ -7,6 +7,7 @@ and open the template in the editor.
     Created on : Apr 18, 2017, 11:35:58 AM
     Author     : felipe
 */
+@import "form.css";
 html body .margin-none {
   margin: 0 !important;
 }
@@ -486,6 +487,12 @@ html body .head-title .md-title {
 html body .text-size-11 {
   font-size: 11px;
 }
+html body .text-size-12 {
+  font-size: 12px;
+}
+html body .text-size-14 {
+  font-size: 13px;
+}
 html body .text-size-14 {
   font-size: 14px;
 }
@@ -515,6 +522,9 @@ html body .text-align-left {
 }
 html body .text-align-right {
   text-align: right;
+}
+html body .text-family-light {
+  font-family: "ProximaNovaLight";
 }
 html body .text-family-normal {
   font-family: "ProximaNova";
@@ -581,9 +591,28 @@ html body h6.info {
   color: #9E9E9E;
   padding: 12px 16px;
 }
-html body md-card .md-title {
+html body .md-title {
   font-size: 20px;
   color: rgba(0, 0, 0, 0.6);
+}
+html body md-card {
+  border-radius: 4px;
+  background-color: #FAFAFA;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.08), 0 2px 2px 0 rgba(0, 0, 0, 0.16);
+  margin: 24px;
+}
+html body md-card + md-card {
+  margin-top: 0;
+}
+html body .side-by-side md-card {
+  margin-top: 0px;
+  margin-bottom: 24px;
+}
+html body .side-by-side md-card + md-card {
+  margin-left: 0;
+}
+html body .details p > span + span {
+  margin-left: 0;
 }
 html body .custom-chips md-chip md-chip,
 html body .md-chips md-chip {
@@ -656,5 +685,208 @@ html body .chips-header .md-chips md-chip {
 }
 html body .chips-header .md-chip-input-container {
   display: none !important;
+}
+html body md-toast {
+  min-width: 64px;
+  position: fixed;
+}
+html body md-toast .md-toast-content {
+  font-family: "ProximaNova";
+  font-size: 16px;
+  background-color: rgba(66, 66, 66, 0.95) !important;
+  border-radius: 4px;
+  color: #FFFFFF !important;
+  line-height: 19px;
+}
+html body md-toast md-icon {
+  color: #fff;
+  margin-right: 8px;
+}
+html body .md-tooltip {
+  font-size: 13px;
+  height: auto;
+  line-height: 19px;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+html body .md-panel.md-tooltip {
+  color: #ffffff;
+  background-color: rgba(66, 66, 66, 0.95);
+  font-size: 13px;
+  line-height: 16px;
+  font-family: "ProximaNova";
+  border-radius: 4px;
+}
+html body .md-subheader {
+  background-color: #fafafa;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
+  width: 100%;
+}
+html body .md-subheader .md-subheader-inner {
+  min-width: 600px;
+  padding: 0;
+}
+html body .md-subheader .md-subheader-inner a {
+  padding: 0 24px;
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 50px;
+  color: #9E9E9E;
+  height: 48px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  border-bottom: 2px solid #fff;
+}
+html body .md-subheader .md-subheader-inner a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-bottom: 2px solid #eee;
+}
+html body .md-subheader .md-subheader-inner a.active {
+  color: #616161;
+  border-bottom: 2px solid #4db6ac;
+}
+html body .md-subheader .md-subheader-inner a.active:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+html body .md-icon {
+  color: rgba(0, 0, 0, 0.35);
+}
+@media screen and (max-width: 600px) {
+  html body md-card {
+    margin: 8px !important;
+  }
+  html body md-card + md-card {
+    margin-top: 0;
+  }
+  html body .side-by-side md-card {
+    margin-top: 0px;
+    margin-bottom: 24px;
+  }
+  html body .side-by-side md-card + md-card {
+    margin-left: 0;
+  }
+  html body .mb-margin-none {
+    margin: 0 !important;
+  }
+  html body .mb-margin-8 {
+    margin: 8px;
+  }
+  html body .mb-margin-16 {
+    margin: 16px;
+  }
+  html body .mb-margin-24 {
+    margin: 24px;
+  }
+  html body .mb-margin-top-none {
+    margin-top: 0 !important;
+  }
+  html body .mb-margin-top-8 {
+    margin-top: 8px;
+  }
+  html body .mb-margin-top-16 {
+    margin-top: 16px;
+  }
+  html body .mb-margin-top-24 {
+    margin-top: 24px;
+  }
+  html body .mb-margin-right-none {
+    margin-right: 0 !important;
+  }
+  html body .mb-margin-right-8 {
+    margin-right: 8px;
+  }
+  html body .mb-margin-right-16 {
+    margin-right: 16px;
+  }
+  html body .mb-margin-right-24 {
+    margin-right: 24px;
+  }
+  html body .mb-margin-bottom-none {
+    margin-bottom: 0 !important;
+  }
+  html body .mb-margin-bottom-8 {
+    margin-bottom: 8px;
+  }
+  html body .mb-margin-bottom-16 {
+    margin-bottom: 16px;
+  }
+  html body .mb-margin-bottom-24 {
+    margin-bottom: 24px;
+  }
+  html body .mb-margin-left-none {
+    margin-left: 0 !important;
+  }
+  html body .mb-margin-left-8 {
+    margin-left: 8px;
+  }
+  html body .mb-margin-left-16 {
+    margin-left: 16px;
+  }
+  html body .mb-margin-left-24 {
+    margin-left: 24px;
+  }
+  html body .mb-padding-none {
+    padding: 0 !important;
+  }
+  html body .mb-padding-8 {
+    padding: 8px;
+  }
+  html body .mb-padding-16 {
+    padding: 16px;
+  }
+  html body .mb-padding-24 {
+    padding: 24px;
+  }
+  html body .mb-padding-top-none {
+    padding-top: 0 !important;
+  }
+  html body .mb-padding-top-8 {
+    padding-top: 8px;
+  }
+  html body .mb-padding-top-16 {
+    padding-top: 16px;
+  }
+  html body .mb-padding-top-24 {
+    padding-top: 24px;
+  }
+  html body .mb-padding-right-none {
+    padding-right: 0 !important;
+  }
+  html body .mb-padding-right-8 {
+    padding-right: 8px;
+  }
+  html body .mb-padding-right-16 {
+    padding-right: 16px;
+  }
+  html body .mb-padding-right-24 {
+    padding-right: 24px;
+  }
+  html body .mb-padding-bottom-none {
+    padding-bottom: 0 !important;
+  }
+  html body .mb-padding-bottom-8 {
+    padding-bottom: 8px;
+  }
+  html body .mb-padding-bottom-16 {
+    padding-bottom: 16px;
+  }
+  html body .mb-padding-bottom-24 {
+    padding-bottom: 24px;
+  }
+  html body .mb-padding-left-none {
+    padding-left: 0 !important;
+  }
+  html body .mb-padding-left-8 {
+    padding-left: 8px;
+  }
+  html body .mb-padding-left-16 {
+    padding-left: 16px;
+  }
+  html body .mb-padding-left-24 {
+    padding-left: 24px;
+  }
 }
 /*# sourceMappingURL=utils.css.map */

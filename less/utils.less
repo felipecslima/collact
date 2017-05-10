@@ -8,8 +8,11 @@ and open the template in the editor.
     Author     : felipe
 */
 
+@import  "form.css";
+
 //####### VARIABLES - BASE #############
 @basePadding: 24px; 
+@basePaddingMobile: 8px; 
 
 //####### VARIABLES - FONT #############
 @normal: "ProximaNova";
@@ -463,9 +466,12 @@ html{
                 margin-bottom: 24px;
             }
         }
+
         .text{
             &-size{
                 &-11{font-size:11px} 
+                &-12{font-size:12px} 
+                &-14{font-size:13px} 
                 &-14{font-size:14px} 
                 &-16{font-size:16px} 
                 &-18{font-size:18px} 
@@ -480,6 +486,7 @@ html{
                 &-right{text-align:right}
             }
             &-family{
+                &-light{font-family:"ProximaNovaLight"}
                 &-normal{font-family:"ProximaNova"}
                 &-semiBold{font-family:"ProximaNovaSemiBold"}
                 &-bold{font-family:"ProximaNovaBold"}
@@ -513,13 +520,44 @@ html{
             }
         }
 
-        //####### CARD #############
+
+        //############ CARDS #############
+        .md-title{
+            font-size: 20px;
+            color: @grey-600;
+        }
+
         md-card{
-            .md-title{
-                font-size: 20px;
-                color: @grey-600;
+            border-radius: 4px;
+            background-color: #FAFAFA;
+            box-shadow: 0 0 2px 0 rgba(0,0,0,0.08), 0 2px 2px 0 rgba(0,0,0,0.16);
+            margin: 24px;
+        }
+
+        md-card + md-card{
+            margin-top: 0;
+        }
+
+        .side-by-side{
+            md-card {
+                margin-top: 0px;
+                margin-bottom: 24px;
+            }
+            md-card + md-card{
+                margin-left: 0;
             }
         }
+
+
+        //################ PAGE DATAILS ################
+        .details{
+            p{
+                >span + span{
+                    margin-left: 0;
+                }
+            }
+        }
+
 
         //####### CHIPS #############
         .custom-chips md-chip,
@@ -595,7 +633,169 @@ html{
             }
         }  
 
-        //####### ICONS #############
-        //####### POSITIONS #############
+        //############ TOAST #############
+        md-toast{
+            min-width: 64px;
+            position: fixed;
+            .md-toast-content{
+                font-family: "ProximaNova";
+                font-size: 16px;
+                background-color: rgba(66, 66, 66, 0.95) !important;
+                border-radius: 4px;
+                color: #FFFFFF !important;
+                line-height: 19px;
+            }
+            md-icon{
+                color: #fff;
+                margin-right: 8px;
+            }
+        }
+
+        //############ TOOLTIP #############
+        .md-tooltip {
+            font-size: 13px;
+            height: auto;
+            line-height: 19px;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+
+        .md-panel.md-tooltip {
+            color: #ffffff;
+            background-color: rgba(66, 66, 66, 0.95);
+            font-size: 13px;
+            line-height: 16px;
+            font-family: "ProximaNova";
+            border-radius: 4px;
+        }
+
+        //############ SUBHEADER #############
+        .md-subheader{
+            background-color: #fafafa;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
+            width: 100%;
+            .md-subheader-inner{
+                min-width: 600px;
+                padding: 0;
+                a{
+                    padding: 0 24px;
+                    display: inline-block;
+                    font-size: 16px;
+                    text-decoration: none;
+                    line-height: 50px;
+                    color: #9E9E9E;
+                    height: 48px;
+
+                    -webkit-transition:	all 0.2s linear;
+                    -moz-transition: all 0.2s linear;
+                    -o-transition: all 0.2s linear;
+                    transition: all 0.2s linear;
+                    border-bottom: 2px solid #fff;
+                    &:hover{
+                        background-color: rgba(0,0,0,0.05);
+                        border-bottom: 2px solid #eee;
+                    }
+                    &.active{
+                        color: #616161;
+                        border-bottom: 2px solid #4db6ac;
+                        &:hover{
+                            background-color: rgba(0,0,0,0.05);
+                        }
+                    }
+                }
+            }
+        }
+        
+        //############ SUBHEADER #############
+        .md-icon{
+            color: rgba(0,0,0,0.35);
+        }
+
+        @media screen and (max-width: 600px) {
+
+            //############ CARDS #############
+            md-card{
+                margin: 8px !important; 
+            }
+
+            md-card + md-card{
+                margin-top: 0;
+            }
+            .side-by-side{
+                md-card {
+                    margin-top: 0px;
+                    margin-bottom: 24px;
+                }
+                md-card + md-card{
+                    margin-left: 0;
+                }
+            }
+
+            //####### MARGINS  #############
+            .mb-margin{
+                &-none{margin: 0 !important;}
+                &-8{margin: 8px;}
+                &-16{margin: 16px;}
+                &-24{margin: 24px;}
+                &-top{
+                    &-none{margin-top:0 !important;}
+                    &-8{margin-top:8px}
+                    &-16{margin-top:16px}
+                    &-24{margin-top:24px}
+                }
+                &-right{
+                    &-none{margin-right:0 !important;}
+                    &-8{margin-right:8px}
+                    &-16{margin-right:16px}
+                    &-24{margin-right:24px}
+                }
+                &-bottom{
+                    &-none{margin-bottom:0 !important;}
+                    &-8{margin-bottom:8px}
+                    &-16{margin-bottom:16px}
+                    &-24{margin-bottom:24px}
+                }
+                &-left{
+                    &-none{margin-left:0 !important;}
+                    &-8{margin-left:8px}
+                    &-16{margin-left:16px}
+                    &-24{margin-left:24px}
+                }
+            }
+
+
+            //####### PADDING #######
+            .mb-padding{
+                &-none{padding: 0 !important;}
+                &-8{padding: 8px;}
+                &-16{padding: 16px;}
+                &-24{padding: 24px;}
+                &-top{
+                    &-none{padding-top:0 !important;}
+                    &-8{padding-top:8px}
+                    &-16{padding-top:16px}
+                    &-24{padding-top:24px}
+                }
+                &-right{
+                    &-none{padding-right:0 !important;}
+                    &-8{padding-right:8px}
+                    &-16{padding-right:16px}
+                    &-24{padding-right:24px}
+                }
+                &-bottom{
+                    &-none{padding-bottom:0 !important;}
+                    &-8{padding-bottom:8px}
+                    &-16{padding-bottom:16px}
+                    &-24{padding-bottom:24px}
+                }
+                &-left{
+                    &-none{padding-left:0 !important;}
+                    &-8{padding-left:8px}
+                    &-16{padding-left:16px}
+                    &-24{padding-left:24px}
+                }
+            }
+        }
+
     }
 }

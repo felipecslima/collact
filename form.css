@@ -7,44 +7,93 @@ and open the template in the editor.
     Created on : Jan 31, 2017, 11:42:21 AM
     Author     : felipe
 */
-md-checkbox.md-checked .md-icon {
+html body md-checkbox.md-default-theme:not(.md-checked) .md-icon,
+html body md-checkbox:not(.md-checked) .md-icon {
+  border-color: rgba(0, 0, 0, 0.35);
+  width: 18px;
+  height: 18px;
+  margin: 0px 3px 0 0;
+}
+html body md-checkbox {
+  margin-top: 12px;
+}
+html body md-checkbox.md-checked .md-icon {
   background-color: #41918A;
 }
-md-checkbox.md-checked .md-icon:after {
+html body md-checkbox.md-checked .md-icon:after {
   border-color: #ededed;
 }
-md-checkbox .md-label {
-  color: #676767;
-  font-weight: normal;
+html body md-checkbox .md-label {
   font-family: "ProximaNovaLight";
+  color: #666666;
+  margin-left: 28px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: normal;
 }
-md-checkbox .md-label a {
+html body md-checkbox .md-label a {
   color: #41918a;
 }
-button md-checkbox {
+html body md-checkbox + .error {
+  margin-top: -15px;
+  margin-left: 30px;
+  font-size: 13px;
+  color: #e83b3f;
+  margin-bottom: 24px;
+}
+html body md-radio-button.md-default-theme:not([disabled]).md-primary .md-on,
+html body md-radio-button:not([disabled]).md-primary .md-on,
+html body md-radio-button.md-default-theme:not([disabled]) .md-primary .md-on,
+html body md-radio-button:not([disabled]) .md-primary .md-on,
+html body md-radio-group.md-default-theme:not([disabled]).md-primary .md-on,
+html body md-radio-group:not([disabled]).md-primary .md-on,
+html body md-radio-group.md-default-theme:not([disabled]) .md-primary .md-on,
+html body md-radio-group:not([disabled]) .md-primary .md-on {
+  background-color: #41918a !important;
+}
+html body md-radio-button.md-default-theme .md-off,
+html body md-radio-button .md-off {
+  border-color: rgba(0, 0, 0, 0.35);
+}
+html body md-radio-button:not([disabled]).md-primary.md-checked .md-off {
+  border-color: #41918A;
+}
+html body md-radio-group {
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+html body md-radio-group md-radio-button .md-label {
+  font-family: "ProximaNovaLight";
+  color: #666666;
+  margin-left: 28px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: normal;
+}
+html body button md-checkbox {
   margin: 0px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-div.upload {
+html body div.upload {
   margin: 0  0 24px 0;
 }
-div.upload label {
+html body div.upload label {
   font-size: 13px;
   font-family: Verdana;
   color: #64bcb4;
   margin-bottom: 8px;
   display: block;
 }
-div.upload .text-helper {
+html body div.upload .text-helper {
   font-size: 13px;
   font-family: Verdana;
   color: #9e9e9e;
   margin-top: 8px;
   display: block;
 }
-div.upload .icon {
+html body div.upload .icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,11 +103,11 @@ div.upload .icon {
   background-color: rgba(0, 0, 0, 0.05);
   border: dashed 1px #9e9e9e;
 }
-div.upload .icon i {
+html body div.upload .icon i {
   font-size: 40px;
   color: rgba(0, 0, 0, 0.16);
 }
-div.upload .image-wrap {
+html body div.upload .image-wrap {
   max-height: 120px;
   overflow: hidden;
   border-radius: 4px;
@@ -70,7 +119,7 @@ div.upload .image-wrap {
   border: solid 2px rgba(0, 0, 0, 0.16);
   display: block;
 }
-div.upload .image-wrap img {
+html body div.upload .image-wrap img {
   width: 100%;
   border-radius: 4px;
   position: absolute;
@@ -78,7 +127,7 @@ div.upload .image-wrap img {
   top: 50%;
   -webkit-transform: translateY(-50%) translateX(-50%);
 }
-div.upload .image-wrap .edit {
+html body div.upload .image-wrap .edit {
   cursor: pointer;
   width: 120px;
   height: 48px;
@@ -94,136 +143,112 @@ div.upload .image-wrap .edit {
   font-family: "ProximaNovaSemiBold";
   line-height: 1;
 }
-div.upload .image-wrap .edit .material-icons {
+html body div.upload .image-wrap .edit .material-icons {
   margin-right: 8px;
 }
-div.upload .image-wrap .edit span {
+html body div.upload .image-wrap .edit span {
   margin-top: 1px;
 }
-md-input-container.md-default-theme:not(.md-input-invalid).md-input-focused .md-input,
-md-input-container:not(.md-input-invalid).md-input-focused .md-input,
-md-input-container.md-default-theme:not(.md-input-invalid).md-input-resized .md-input,
-md-input-container:not(.md-input-invalid).md-input-resized .md-input {
+html body div.upload .image-wrap md-input-container.md-default-theme:not(.md-input-invalid).md-input-focused .md-input,
+html body div.upload .image-wrap md-input-container:not(.md-input-invalid).md-input-focused .md-input,
+html body div.upload .image-wrap md-input-container.md-default-theme:not(.md-input-invalid).md-input-resized .md-input,
+html body div.upload .image-wrap md-input-container:not(.md-input-invalid).md-input-resized .md-input {
   border-bottom-color: #64BCB4 !important;
 }
-md-input-container.md-default-theme:not(.md-input-invalid).md-input-focused label,
-md-input-container:not(.md-input-invalid).md-input-focused label,
-md-input-container.md-default-theme:not(.md-input-invalid).md-input-focused md-icon,
-md-input-container:not(.md-input-invalid).md-input-focused md-icon {
+html body div.upload .image-wrap md-input-container.md-default-theme:not(.md-input-invalid).md-input-focused label,
+html body div.upload .image-wrap md-input-container:not(.md-input-invalid).md-input-focused label,
+html body div.upload .image-wrap md-input-container.md-default-theme:not(.md-input-invalid).md-input-focused md-icon,
+html body div.upload .image-wrap md-input-container:not(.md-input-invalid).md-input-focused md-icon {
   color: #64BCB4 !important;
 }
-md-radio-button.md-default-theme:not([disabled]).md-primary .md-on,
-md-radio-button:not([disabled]).md-primary .md-on,
-md-radio-button.md-default-theme:not([disabled]) .md-primary .md-on,
-md-radio-button:not([disabled]) .md-primary .md-on,
-md-radio-group.md-default-theme:not([disabled]).md-primary .md-on,
-md-radio-group:not([disabled]).md-primary .md-on,
-md-radio-group.md-default-theme:not([disabled]) .md-primary .md-on,
-md-radio-group:not([disabled]) .md-primary .md-on {
-  background-color: #41918a !important;
-}
-form button,
-form select,
-form html,
-form textarea,
-form input {
+html body form button,
+html body form select,
+html body form html,
+html body form textarea,
+html body form input {
   font-family: "ProximaNova";
 }
-form md-input-container.md-input-focused label:not(.md-no-float),
-form md-input-container.md-input-has-value label:not(.md-no-float) {
+html body form md-input-container {
+  margin: 25px 0 0 0;
+}
+html body form md-input-container .md-input {
+  line-height: 1;
+  padding: 8px 0!important;
+}
+html body form md-input-container label {
+  line-height: 1;
+}
+html body form md-input-container.disabled label {
+  color: rgba(0, 0, 0, 0.35) !important;
+}
+html body form md-input-container.md-input-focused label:not(.md-no-float),
+html body form md-input-container.md-input-has-value label:not(.md-no-float) {
   transform: translate3d(0, 6px, 0) scale(0.9);
 }
-form md-input-container .md-input-message-animation,
-form md-input-container .md-char-counter {
+html body form md-input-container .md-input-message-animation,
+html body form md-input-container .md-char-counter {
   font-size: 13px;
 }
-form .md-char-counter {
+html body form .md-char-counter {
   color: #9E9E9E;
 }
-form md-select .md-select-value,
-form md-input-container .md-input,
-form .md-select-value > span:not(.md-select-icon) .md-text {
-  color: #676767;
+html body form md-select .md-select-value,
+html body form md-input-container .md-input,
+html body form .md-select-value > span:not(.md-select-icon) .md-text {
+  color: #666666;
   border-color: #9E9E9E;
 }
-form .md-select-value > span.md-select-icon {
+html body form .md-select-value > span.md-select-icon {
   color: rgba(0, 0, 0, 0.35);
 }
-form .side-by-side md-input-container {
+html body form .side-by-side md-input-container {
   padding: 2px 12px;
 }
-form .side-by-side md-input-container:first-of-type {
-  padding: 2px 12px 2px 2px;
+html body form .side-by-side md-input-container:first-of-type {
+  padding: 2px 20px 2px 2px;
 }
-form .side-by-side md-input-container:last-of-type {
-  padding: 2px 2px 2px 12px;
+html body form .side-by-side md-input-container:last-of-type {
+  padding: 2px 2px 2px 20px;
 }
-form .side-by-side md-input-container + md-input-container label:not(.md-no-float):not(.md-container-ignore),
-form .side-by-side md-input-container + md-input-container .hint {
-  padding-left: 12px;
+html body form .side-by-side md-input-container + md-input-container label:not(.md-no-float):not(.md-container-ignore),
+html body form .side-by-side md-input-container + md-input-container .hint {
+  padding-left: 20px;
 }
-form .larguraX {
-  color: #676767;
+html body form .larguraX {
+  color: #666666;
   font-size: 16px;
   position: absolute;
-  margin: 6px 0 0 1.2px;
+  margin: 5px 0 0 1.2px;
 }
-form label.active {
-  transform: translate3d(0, 6px, 0) scale(0.9) !important;
-  color: rgba(0, 0, 0, 0.54);
+html body form label.active {
+  transform: translate3d(0, 6px, 0) scale(0.8) !important;
+  color: rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.9px;
 }
-form .checkbox-all label.title {
-  display: block;
-  font-family: Verdana;
-  font-size: 13px;
-  line-height: 16px;
-  color: #9E9E9E;
+html body form .checkbox-all md-checkbox {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+html body form md-checkbox {
   margin-bottom: 16px;
 }
-form .checkbox-all md-checkbox {
-  margin-bottom: 8px;
-}
-form .checkbox-all md-checkbox .md-label {
-  color: #9E9E9E;
-  font-size: 16px;
-}
-form md-checkbox {
-  margin-top: 8px;
-}
-form md-checkbox .md-label {
-  color: #8c8c8c;
-}
-form md-checkbox + .error {
-  margin-top: -15px;
-  margin-left: 30px;
-  font-size: 13px;
-  color: #e83b3f;
-  margin-bottom: 24px;
-}
-form md-radio-group {
-  margin-top: 14px;
-}
-form md-radio-group md-radio-button .md-label {
-  color: #676767;
-  font-size: 16px;
-}
-form .footer-form {
+html body form .footer-form {
   background-color: #F5F5F5;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.08), 0 -2px 2px 0 rgba(0, 0, 0, 0.16);
 }
-form .footer-form.fixed {
+html body form .footer-form.fixed {
   position: fixed;
   width: 100%;
   bottom: 0;
 }
-md-input-container {
+html body md-input-container {
   /* NOTE: Check the demo's HTML to see some additional RTL support CSS */
   /* Setup animations similar to the ng-messages */
 }
-md-input-container .hint {
+html body md-input-container .hint {
   display: none;
 }
-md-input-container.md-input-focused:not(.md-input-invalid) .hint {
+html body md-input-container.md-input-focused:not(.md-input-invalid) .hint {
   /* Position the hint */
   display: block;
   position: absolute;
@@ -238,47 +263,47 @@ md-input-container.md-input-focused:not(.md-input-invalid) .hint {
   /* Set our own color */
   color: rgba(0, 0, 0, 0.35);
 }
-md-input-container .hint.ng-hide,
-md-input-container .hint.ng-enter,
-md-input-container .hint.ng-leave.ng-leave-active {
+html body md-input-container .hint.ng-hide,
+html body md-input-container .hint.ng-enter,
+html body md-input-container .hint.ng-leave.ng-leave-active {
   bottom: 26px;
   opacity: 0;
 }
-md-input-container .hint.ng-leave,
-md-input-container .hint.ng-enter.ng-enter-active {
+html body md-input-container .hint.ng-leave,
+html body md-input-container .hint.ng-enter.ng-enter-active {
   bottom: 7px;
   opacity: 1;
 }
-md-input-container i.for-input {
+html body md-input-container i.for-input {
   position: absolute;
   right: 5px;
   top: 3px;
   display: none;
 }
-md-input-container input.ng-untouched.ng-empty + div + i.for-input {
+html body md-input-container input.ng-untouched.ng-empty + div + i.for-input {
   color: #9e9e9e;
 }
-md-input-container input.ng-touched.ng-invalid + div + i.for-input {
-  color: #dd2c00;
+html body md-input-container input.ng-touched.ng-invalid + div + i.for-input {
+  color: #EF5350;
   display: block;
 }
-md-input-container input.ng-valid.ng-valid-cpf + div + i + i.for-input,
-md-input-container input.ng-valid + div + i + i.for-input {
+html body md-input-container input.ng-valid.ng-valid-cpf + div + i + i.for-input,
+html body md-input-container input.ng-valid + div + i + i.for-input {
   color: #41918a;
   display: block;
 }
-md-autocomplete[md-floating-label] {
+html body md-autocomplete[md-floating-label] {
   height: 70px !important;
 }
-.form-card {
+html body .form-card {
   width: 100%;
 }
-.form-card .footer {
+html body .form-card .footer {
   box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05);
   background-color: #f5f5f5;
   padding: 24px;
 }
-.form-card .footer .md-button {
+html body .form-card .footer .md-button {
   line-height: 1.1;
   font-size: 16px;
   font-family: "ProximaNovaSemiBold";
@@ -287,34 +312,34 @@ md-autocomplete[md-floating-label] {
   margin-bottom: 0;
   margin-right: 0;
 }
-.search-input md-input-container {
+html body .search-input md-input-container {
   overflow: hidden;
   height: 40px;
   margin: 0 0 0 0;
   padding: 0 36px;
 }
-.search-input md-input-container.md-input-focused label {
+html body .search-input md-input-container.md-input-focused label {
   display: none !important;
 }
-.search-input md-input-container.md-input-has-placeholder label {
+html body .search-input md-input-container.md-input-has-placeholder label {
   display: none !important;
 }
-.search-input md-input-container.md-input-has-value label {
+html body .search-input md-input-container.md-input-has-value label {
   display: none !important;
 }
-.search-input md-input-container input {
+html body .search-input md-input-container input {
   margin: 0;
   font-family: "ProximaNova";
   width: 100%;
-  color: #676767;
+  color: #666666;
 }
-.search-input md-input-container .md-errors-spacer {
+html body .search-input md-input-container .md-errors-spacer {
   display: none;
 }
-.search-input md-input-container md-icon {
-  color: rgba(0, 0, 0, 0.54);
+html body .search-input md-input-container md-icon {
+  color: rgba(0, 0, 0, 0.6);
 }
-.search-input md-input-container.md-icon-right > md-icon:last-of-type {
+html body .search-input md-input-container.md-icon-right > md-icon:last-of-type {
   margin: 0;
   right: 1px;
   left: auto;
