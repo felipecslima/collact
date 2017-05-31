@@ -7,7 +7,79 @@ and open the template in the editor.
     Created on : Apr 18, 2017, 11:35:58 AM
     Author     : felipe
 */
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 17, 2016, 4:16:59 PM
+    Author     : felipe
+*/
+@import "util-toolbar.css";
+@import "util-sideNav.css";
+@import "util-card.css";
+@import "util-icon.css";
+@import "util-button.css";
 @import "form.css";
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/proxima-nova/proximanova-regular-webfont.eot');
+  src: url('../fonts/proxima-nova/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proxima-nova/proximanova-regular-webfont.woff') format('woff'), url('../fonts/proxima-nova/proximanova-regular-webfont.ttf') format('truetype'), url('../fonts/proxima-nova/proximanova-regular-webfont.svg#Proxima_Nova') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaSemiBold';
+  src: url('../fonts/proxima-nova/proximanova-semibold-webfont.eot');
+  src: url('../fonts/proxima-nova/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proxima-nova/proximanova-semibold-webfont.woff') format('woff'), url('../fonts/proxima-nova/proximanova-semibold-webfont.ttf') format('truetype'), url('../fonts/proxima-nova/proximanova-semibold-webfont.svg#Proxima_NovaB') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url('../fonts/proxima-nova/proximanova-bold-webfont.eot');
+  src: url('../fonts/proxima-nova/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proxima-nova/proximanova-bold-webfont.woff') format('woff'), url('../fonts/proxima-nova/proximanova-bold-webfont.ttf') format('truetype'), url('../fonts/proxima-nova/proximanova-bold-webfont.svg#Proxima_NovaBB') format('svg');
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaLight';
+  src: url('../fonts/proxima-nova/proximanova-light-webfont.eot');
+  src: url('../fonts/proxima-nova/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proxima-nova/proximanova-light-webfont.woff') format('woff'), url('../fonts/proxima-nova/proximanova-light-webfont.ttf') format('truetype'), url('../fonts/proxima-nova/proximanova-light-webfont.svg#Proxima_NovaBB') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/material-design-icons/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(../fonts/material-design-icons/MaterialIcons-Regular.woff2) format('woff2'), url(../fonts/material-design-icons/MaterialIcons-Regular.woff) format('woff'), url(../fonts/material-design-icons/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
 .layout-padding-gt-sm,
 .layout-padding-md,
 .layout-padding > *,
@@ -30,6 +102,15 @@ html body .margin-16 {
 html body .margin-24 {
   margin: 24px;
 }
+html body .margin-force-8 {
+  margin: 8px !important;
+}
+html body .margin-force-16 {
+  margin: 16px !important;
+}
+html body .margin-force-24 {
+  margin: 24px !important;
+}
 html body .margin-top-none {
   margin-top: 0 !important;
 }
@@ -41,6 +122,15 @@ html body .margin-top-16 {
 }
 html body .margin-top-24 {
   margin-top: 24px;
+}
+html body .margin-top-force-8 {
+  margin-top: 8px !important;
+}
+html body .margin-top-force-16 {
+  margin-top: 16px !important;
+}
+html body .margin-top-force-24 {
+  margin-top: 24px !important;
 }
 html body .margin-right-none {
   margin-right: 0 !important;
@@ -54,6 +144,15 @@ html body .margin-right-16 {
 html body .margin-right-24 {
   margin-right: 24px;
 }
+html body .margin-right-force-8 {
+  margin-right: 8px !important;
+}
+html body .margin-right-force-16 {
+  margin-right: 16px !important;
+}
+html body .margin-right-force-24 {
+  margin-right: 24px !important;
+}
 html body .margin-bottom-none {
   margin-bottom: 0 !important;
 }
@@ -65,6 +164,15 @@ html body .margin-bottom-16 {
 }
 html body .margin-bottom-24 {
   margin-bottom: 24px;
+}
+html body .margin-bottom-force-8 {
+  margin-bottom: 8px !important;
+}
+html body .margin-bottom-force-16 {
+  margin-bottom: 16px !important;
+}
+html body .margin-bottom-force-24 {
+  margin-bottom: 24px !important;
 }
 html body .margin-left-none {
   margin-left: 0 !important;
@@ -78,6 +186,15 @@ html body .margin-left-16 {
 html body .margin-left-24 {
   margin-left: 24px;
 }
+html body .margin-left-force-8 {
+  margin-left: 8px !important;
+}
+html body .margin-left-force-16 {
+  margin-left: 16px !important;
+}
+html body .margin-left-force-24 {
+  margin-left: 24px !important;
+}
 html body .padding-none {
   padding: 0 !important;
 }
@@ -89,6 +206,15 @@ html body .padding-16 {
 }
 html body .padding-24 {
   padding: 24px;
+}
+html body .padding-force-8 {
+  padding: 8px !important;
+}
+html body .padding-force-16 {
+  padding: 16px !important;
+}
+html body .padding-force-24 {
+  padding: 24px !important;
 }
 html body .padding-top-none {
   padding-top: 0 !important;
@@ -102,6 +228,15 @@ html body .padding-top-16 {
 html body .padding-top-24 {
   padding-top: 24px;
 }
+html body .padding-top-force-8 {
+  padding-top: 8px !important;
+}
+html body .padding-top-force-16 {
+  padding-top: 16px !important;
+}
+html body .padding-top-force-24 {
+  padding-top: 24px !important;
+}
 html body .padding-right-none {
   padding-right: 0 !important;
 }
@@ -113,6 +248,15 @@ html body .padding-right-16 {
 }
 html body .padding-right-24 {
   padding-right: 24px;
+}
+html body .padding-right-force-8 {
+  padding-right: 8px !important;
+}
+html body .padding-right-force-16 {
+  padding-right: 16px !important;
+}
+html body .padding-right-force-24 {
+  padding-right: 24px !important;
 }
 html body .padding-bottom-none {
   padding-bottom: 0 !important;
@@ -126,6 +270,15 @@ html body .padding-bottom-16 {
 html body .padding-bottom-24 {
   padding-bottom: 24px;
 }
+html body .padding-bottom-force-8 {
+  padding-bottom: 8px !important;
+}
+html body .padding-bottom-force-16 {
+  padding-bottom: 16px !important;
+}
+html body .padding-bottom-force-24 {
+  padding-bottom: 24px !important;
+}
 html body .padding-left-none {
   padding-left: 0 !important;
 }
@@ -137,6 +290,15 @@ html body .padding-left-16 {
 }
 html body .padding-left-24 {
   padding-left: 24px;
+}
+html body .padding-left-force-8 {
+  padding-left: 8px !important;
+}
+html body .padding-left-force-16 {
+  padding-left: 16px !important;
+}
+html body .padding-left-force-24 {
+  padding-left: 24px !important;
 }
 html body .layout-padding {
   padding: 24px;
@@ -598,22 +760,6 @@ html body .md-title {
   font-size: 20px;
   color: rgba(0, 0, 0, 0.6);
 }
-html body md-card {
-  border-radius: 4px;
-  background-color: #FAFAFA;
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.08), 0 2px 2px 0 rgba(0, 0, 0, 0.16);
-  margin: 24px;
-}
-html body md-card + md-card {
-  margin-top: 0;
-}
-html body .side-by-side md-card {
-  margin-top: 0px;
-  margin-bottom: 24px;
-}
-html body .side-by-side md-card + md-card {
-  margin-left: 0;
-}
 html body .details p > span + span {
   margin-left: 0;
 }
@@ -758,19 +904,6 @@ html body .md-icon {
   color: rgba(0, 0, 0, 0.35);
 }
 @media screen and (max-width: 600px) {
-  html body md-card {
-    margin: 8px !important;
-  }
-  html body md-card + md-card {
-    margin-top: 0;
-  }
-  html body .side-by-side md-card {
-    margin-top: 0px;
-    margin-bottom: 24px;
-  }
-  html body .side-by-side md-card + md-card {
-    margin-left: 0;
-  }
   html body .mb-margin-none {
     margin: 0 !important;
   }
