@@ -11,7 +11,6 @@ and open the template in the editor.
 
 html{
     body{
-
         md-checkbox.md-default-theme:not(.md-checked) .md-icon, md-checkbox:not(.md-checked) .md-icon {
             border-color: rgba(0,0,0,0.35);
             width: 18px;
@@ -50,8 +49,6 @@ html{
             color: #e83b3f;
             margin-bottom: 24px
         }
-
-
 
         md-radio-button.md-default-theme:not([disabled]).md-primary .md-on, 
             md-radio-button:not([disabled]).md-primary .md-on, 
@@ -189,6 +186,11 @@ html{
         }
 
         form{
+
+            +card{
+                margin-top: 0;
+            }
+
             button, select, html, textarea, input{
                 font-family: "ProximaNova";
             }
