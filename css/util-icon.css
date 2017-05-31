@@ -1,0 +1,24 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31/05/2017, 15:56:51
+    Author     : felipelima
+*/
+html body md-icon {
+  margin: 0;
+}
+html body md-icon.icon-16 {
+  font-size: 16px;
+  height: 16px;
+  min-height: 16px;
+  display: inline-block;
+  width: auto;
+  margin: -2px 0 0 0px;
+}
+html body md-icon.force-color-gray {
+  color: rgba(0, 0, 0, 0.35) !important;
+}
+/*# sourceMappingURL=util-icon.css.map */

@@ -1,0 +1,400 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31/05/2017, 14:02:27
+    Author     : felipelima
+*/
+
+md-sidenav, md-backdrop {
+    position: fixed !important;
+}
+
+html{
+    body{
+        md-sidenav{
+            background-color: #FAFAFA;
+            width: 320px;
+            .nav-header{
+                background-color: #ffffff;
+                padding: 24px;
+                color: #9e9e9e;
+                h2{
+                    font-family: "ProximaNovaSemiBold";
+                    margin: 8px 0 0 0;
+                    padding: 0;
+                    line-height: 1.1;
+                    line-height: 1;
+                    color: #FFF;
+                    font-size: 16px;
+                }
+                span{
+                    color: #FFF;
+                }
+                a{
+                    margin-top: 2px;
+                    line-height: 1.14;
+                    color: #666666;
+                    font-size: 14px;
+                    md-icon{
+                        color: #9e9e9e !important;
+                        font-size: 16px !important;
+                        height: 16px;
+                        width: 16px;
+                        min-height: 16px;
+                        min-width: 16px;
+                        margin-left: 4px;
+                    }
+                }
+                &.custon{
+                    h2{
+                        color: #666666;
+                    }
+                }
+                &.center{
+                    img{
+                        margin: 0 auto 8px auto; 
+                        border-radius: 4px;
+                        display: block;
+                    }
+                    h2{
+                        text-align: center;
+                    }
+                    a{
+                        display: block;
+                        text-align: center;
+                    }
+                }
+            }
+            md-list{
+                padding-top: 0px;
+                padding-bottom: 16px;
+                md-list-item{
+                    padding: 0 24px !important;
+                    i{
+                        margin-right: 24px;
+                        width: 24px;
+                        float: left;
+                    }
+                    a{
+                        color: #9e9e9e;
+                        font-size: 16px;
+                        text-decoration: none;
+
+                        width: 100%;
+                        display: block;
+                        line-height: 25px;
+                        display: block;
+                        &.new:before{
+                            content: 'Novo';
+                            width: initial;
+                            font-family: "ProximaNova";
+                            font-size: 10px;
+                            line-height: 12px;
+                            color: rgba(0, 0, 0, 0.5);
+                            min-height: initial;
+                            padding: 5px 8px;
+                            background: #70E0BC;
+                            position: absolute;
+                            right: 24px;
+                            display: inline-block;
+                            border-radius: 100px;
+                            float: right;
+                        }
+                        &.soon:before{
+                            content: 'Breve';
+                            width: initial;
+                            font-family: "ProximaNova";
+                            font-size: 10px;
+                            line-height: 12px;
+                            color: rgba(0, 0, 0, 0.5);
+                            min-height: initial;
+                            padding: 5px 8px;
+                            background: rgba(0, 0, 0, 0.16);
+                            position: absolute;
+                            right: 24px;
+                            display: inline-block;
+                            border-radius: 100px;
+                            float: right;
+                        }
+                        i + .md-list-item-text{
+                            color: #9E9E9E;
+                        }
+                        i.active + .md-list-item-text{
+                            color: #666666;
+                        }
+                    }
+                    &:hover{
+                        background: #efefef;
+                    }
+                    &.active{
+                        a{
+                            color: #666666;
+                        }
+                        background: #efefef;
+                    }
+                }
+                &.last{
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    md-list-item{
+                        img{
+                            width: 40px;
+                            margin-right: 8px;
+
+                            border-radius: 2px;
+                            border: solid 1px rgba(0, 0, 0, 0.05);
+                        }
+
+                        h3{
+                            margin: 0;
+                            font-family: "ProximaNovaSemiBold";
+                            font-size: 16px;
+                            color: #666666;
+
+                            width: 224px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis // This is where the magic happens
+                        }
+
+                        h4{
+                            margin: 0;
+                            font-family: "ProximaNova";
+                            font-size: 14px;
+                            color: #9e9e9e;
+                            font-weight: normal;
+
+                            width: 224px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis // This is where the magic happens
+                        }
+                        &:hover{
+                            background: transparent;
+                        }
+
+                        .md-button{
+                            height: 46px;
+                            border-radius: 2px;
+                            background-color: #98e0da;
+                            margin: 4px 0 0 0;
+                            width: 100%;
+                            color: rgba(0, 0, 0, 0.35) !important;
+                            box-shadow: none;
+                            .showDesktop{display: inline-block;}
+                            .showMobile{display: none;}
+                            md-icon{
+                                color: rgba(0, 0, 0, 0.35) !important;
+                                margin-right: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .sub-header{
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
+            z-index: 9;
+            background: #fafafa;
+            padding: 17px 24px;
+            height: 48px;
+            min-height: 48px;
+            background: #fff;
+            h3{
+                margin: 0; line-height: 1.1;
+                color: #666666;
+                font-family: "ProximaNovaLight";
+                font-size: 16px;
+            }
+
+            .md-menu{
+                margin-top: -5px;
+            }
+
+            a{
+                height: 19px;
+                margin-left: 8px;
+                color: #666666;
+                font-size: 16px;
+                cursor: pointer;
+                md-icon{
+                    color: #666666;
+                    &.md-f-16{
+                        height: 16px;
+                        width: 16px;
+                        min-height: 16px;
+                        min-width: 16px;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .select-period{
+                a{
+                    margin:0;
+                    md-icon{
+                        color: #41918A;
+                    }
+                    &.disable{
+                        md-icon{
+                            opacity: 0.35;
+                        }  
+                    }
+                }
+                .date{
+                    color: #666666;
+                    font-size: 16px;
+                }      
+            }
+            &.fixed{
+                position: fixed;
+                width: 100%;
+                z-index: 9;
+                top: 0;
+                width: ~"calc(100% - 72px)";
+            }
+            &.tab{
+                padding: 0;
+                a{
+                    padding: 0 24px;
+                    margin: 0;
+                    height:56px;
+                    line-height: 59px;
+                    border-bottom: 2px solid #fff;
+                    &.active{
+                        border-color: #4db6ac;
+                    }
+                }
+            }
+        } 
+        .nav-drawer-min{
+            background-color: #fafafa;
+            box-shadow: 0 0 2px 0 rgba(0,0,0,0.08), 2px 0 2px 0 rgba(0,0,0,0.16);
+            z-index: 10;
+            width: 72px;
+            float: left;
+            position: fixed;
+            top: 64px;
+            height: ~"calc(100% - 64px)";
+            padding-top: 0;
+            background: #FAFAFA;
+            .md-button{
+                padding: 0;
+                width: 100%;
+                height: 48px !important;
+                min-height: inherit;
+                border-radius: 0 !important;
+                border-radius: 0;
+                margin: 0;
+                line-height: normal;
+                min-width: 1px;
+                display: flex;
+                &:first-of-type{
+                    margin-top: 12px;
+                }
+                &:last-of-type{
+                    position: absolute;
+                    bottom: 0;
+                }
+                &.bottom{
+                    position: fixed;
+                    bottom: 0;
+                    width: 72px;
+                    box-shadow: 2px 0 0 0 #cacaca, 0 0 0 0 #cacaca;
+                    background: #fafafa;
+                    &:before{
+                        content: "";
+                        position: fixed;
+                        bottom: 47px;
+                        width: 72px;
+                        box-shadow: 2px 0 0 0 #cacaca, 0 0 0 0 #cacaca;
+                        background: #fafafa;
+                        height: 40px;
+                        left: 0px;
+                    }
+                    &.position2{
+                        bottom: 48px;
+                        z-index: 2;
+                        &:before{
+                            display: none;
+                        }
+                    }
+                }
+                i{
+                    margin: 0 auto;
+                }
+                md-icon{
+                    color: #9e9e9e;
+                    display: block;
+                    margin:  0 auto;
+                }
+                &:hover{
+                    md-icon{
+                        color: #41918A;
+                    }
+                }
+            }
+            &.fixed{
+                position: fixed;
+                top: 0;
+                height: 100%;
+            }
+        }
+
+        .sub-header + .nav-drawer-min{
+            top: 121px;
+            height: ~"calc(100% - 121px)";
+            &.fixed{
+                position: fixed;
+                top: 57px;
+                height: ~"calc(100% - 57px)";
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    html{
+        body{
+            md-sidenav{
+                max-width: 250px;
+                md-list{
+                    md-list-item{
+                        a{
+                            &:before{
+                                display: none !important;
+                            }
+                        }
+                        &:hover{
+                            background: none;
+                        }
+                    }
+                    &.last{
+                        position: relative;
+                        md-list-item{
+                            .md-button{
+                                .showDesktop{display: none;}
+                                .showMobile{display: inline-block;}
+                            }
+
+                            h3,h4{
+                                max-width: 260px;
+                            }
+                        }
+                    }
+                }
+            }
+            .sub-header{
+                padding:17px 8px;
+                &.fixed{
+                    width: 100%; 
+                }
+            }
+        }
+
+    }
+}

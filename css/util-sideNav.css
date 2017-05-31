@@ -1,0 +1,365 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31/05/2017, 14:02:27
+    Author     : felipelima
+*/
+md-sidenav,
+md-backdrop {
+  position: fixed !important;
+}
+html body md-sidenav {
+  background-color: #FAFAFA;
+  width: 320px;
+}
+html body md-sidenav .nav-header {
+  background-color: #ffffff;
+  padding: 24px;
+  color: #9e9e9e;
+}
+html body md-sidenav .nav-header h2 {
+  font-family: "ProximaNovaSemiBold";
+  margin: 8px 0 0 0;
+  padding: 0;
+  line-height: 1.1;
+  line-height: 1;
+  color: #FFF;
+  font-size: 16px;
+}
+html body md-sidenav .nav-header span {
+  color: #FFF;
+}
+html body md-sidenav .nav-header a {
+  margin-top: 2px;
+  line-height: 1.14;
+  color: #666666;
+  font-size: 14px;
+}
+html body md-sidenav .nav-header a md-icon {
+  color: #9e9e9e !important;
+  font-size: 16px !important;
+  height: 16px;
+  width: 16px;
+  min-height: 16px;
+  min-width: 16px;
+  margin-left: 4px;
+}
+html body md-sidenav .nav-header.custon h2 {
+  color: #666666;
+}
+html body md-sidenav .nav-header.center img {
+  margin: 0 auto 8px auto;
+  border-radius: 4px;
+  display: block;
+}
+html body md-sidenav .nav-header.center h2 {
+  text-align: center;
+}
+html body md-sidenav .nav-header.center a {
+  display: block;
+  text-align: center;
+}
+html body md-sidenav md-list {
+  padding-top: 0px;
+  padding-bottom: 16px;
+}
+html body md-sidenav md-list md-list-item {
+  padding: 0 24px !important;
+}
+html body md-sidenav md-list md-list-item i {
+  margin-right: 24px;
+  width: 24px;
+  float: left;
+}
+html body md-sidenav md-list md-list-item a {
+  color: #9e9e9e;
+  font-size: 16px;
+  text-decoration: none;
+  width: 100%;
+  line-height: 25px;
+  display: block;
+}
+html body md-sidenav md-list md-list-item a.new:before {
+  content: 'Novo';
+  width: initial;
+  font-family: "ProximaNova";
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  min-height: initial;
+  padding: 5px 8px;
+  background: #70E0BC;
+  position: absolute;
+  right: 24px;
+  display: inline-block;
+  border-radius: 100px;
+  float: right;
+}
+html body md-sidenav md-list md-list-item a.soon:before {
+  content: 'Breve';
+  width: initial;
+  font-family: "ProximaNova";
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  min-height: initial;
+  padding: 5px 8px;
+  background: rgba(0, 0, 0, 0.16);
+  position: absolute;
+  right: 24px;
+  display: inline-block;
+  border-radius: 100px;
+  float: right;
+}
+html body md-sidenav md-list md-list-item a i + .md-list-item-text {
+  color: #9E9E9E;
+}
+html body md-sidenav md-list md-list-item a i.active + .md-list-item-text {
+  color: #666666;
+}
+html body md-sidenav md-list md-list-item:hover {
+  background: #efefef;
+}
+html body md-sidenav md-list md-list-item.active {
+  background: #efefef;
+}
+html body md-sidenav md-list md-list-item.active a {
+  color: #666666;
+}
+html body md-sidenav md-list.last {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+html body md-sidenav md-list.last md-list-item img {
+  width: 40px;
+  margin-right: 8px;
+  border-radius: 2px;
+  border: solid 1px rgba(0, 0, 0, 0.05);
+}
+html body md-sidenav md-list.last md-list-item h3 {
+  margin: 0;
+  font-family: "ProximaNovaSemiBold";
+  font-size: 16px;
+  color: #666666;
+  width: 224px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+html body md-sidenav md-list.last md-list-item h4 {
+  margin: 0;
+  font-family: "ProximaNova";
+  font-size: 14px;
+  color: #9e9e9e;
+  font-weight: normal;
+  width: 224px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+html body md-sidenav md-list.last md-list-item:hover {
+  background: transparent;
+}
+html body md-sidenav md-list.last md-list-item .md-button {
+  height: 46px;
+  border-radius: 2px;
+  background-color: #98e0da;
+  margin: 4px 0 0 0;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.35) !important;
+  box-shadow: none;
+}
+html body md-sidenav md-list.last md-list-item .md-button .showDesktop {
+  display: inline-block;
+}
+html body md-sidenav md-list.last md-list-item .md-button .showMobile {
+  display: none;
+}
+html body md-sidenav md-list.last md-list-item .md-button md-icon {
+  color: rgba(0, 0, 0, 0.35) !important;
+  margin-right: 2px;
+}
+html body .sub-header {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
+  z-index: 9;
+  background: #fafafa;
+  padding: 17px 24px;
+  height: 48px;
+  min-height: 48px;
+  background: #fff;
+}
+html body .sub-header h3 {
+  margin: 0;
+  line-height: 1.1;
+  color: #666666;
+  font-family: "ProximaNovaLight";
+  font-size: 16px;
+}
+html body .sub-header .md-menu {
+  margin-top: -5px;
+}
+html body .sub-header a {
+  height: 19px;
+  margin-left: 8px;
+  color: #666666;
+  font-size: 16px;
+  cursor: pointer;
+}
+html body .sub-header a md-icon {
+  color: #666666;
+}
+html body .sub-header a md-icon.md-f-16 {
+  height: 16px;
+  width: 16px;
+  min-height: 16px;
+  min-width: 16px;
+  font-size: 16px;
+}
+html body .sub-header .select-period a {
+  margin: 0;
+}
+html body .sub-header .select-period a md-icon {
+  color: #41918A;
+}
+html body .sub-header .select-period a.disable md-icon {
+  opacity: 0.35;
+}
+html body .sub-header .select-period .date {
+  color: #666666;
+  font-size: 16px;
+}
+html body .sub-header.fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  top: 0;
+  width: calc(100% - 72px);
+}
+html body .sub-header.tab {
+  padding: 0;
+}
+html body .sub-header.tab a {
+  padding: 0 24px;
+  margin: 0;
+  height: 56px;
+  line-height: 59px;
+  border-bottom: 2px solid #fff;
+}
+html body .sub-header.tab a.active {
+  border-color: #4db6ac;
+}
+html body .nav-drawer-min {
+  background-color: #fafafa;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.08), 2px 0 2px 0 rgba(0, 0, 0, 0.16);
+  z-index: 10;
+  width: 72px;
+  float: left;
+  position: fixed;
+  top: 64px;
+  height: calc(100% - 64px);
+  padding-top: 0;
+  background: #FAFAFA;
+}
+html body .nav-drawer-min .md-button {
+  padding: 0;
+  width: 100%;
+  height: 48px !important;
+  min-height: inherit;
+  border-radius: 0 !important;
+  border-radius: 0;
+  margin: 0;
+  line-height: normal;
+  min-width: 1px;
+  display: flex;
+}
+html body .nav-drawer-min .md-button:first-of-type {
+  margin-top: 12px;
+}
+html body .nav-drawer-min .md-button:last-of-type {
+  position: absolute;
+  bottom: 0;
+}
+html body .nav-drawer-min .md-button.bottom {
+  position: fixed;
+  bottom: 0;
+  width: 72px;
+  box-shadow: 2px 0 0 0 #cacaca, 0 0 0 0 #cacaca;
+  background: #fafafa;
+}
+html body .nav-drawer-min .md-button.bottom:before {
+  content: "";
+  position: fixed;
+  bottom: 47px;
+  width: 72px;
+  box-shadow: 2px 0 0 0 #cacaca, 0 0 0 0 #cacaca;
+  background: #fafafa;
+  height: 40px;
+  left: 0px;
+}
+html body .nav-drawer-min .md-button.bottom.position2 {
+  bottom: 48px;
+  z-index: 2;
+}
+html body .nav-drawer-min .md-button.bottom.position2:before {
+  display: none;
+}
+html body .nav-drawer-min .md-button i {
+  margin: 0 auto;
+}
+html body .nav-drawer-min .md-button md-icon {
+  color: #9e9e9e;
+  display: block;
+  margin: 0 auto;
+}
+html body .nav-drawer-min .md-button:hover md-icon {
+  color: #41918A;
+}
+html body .nav-drawer-min.fixed {
+  position: fixed;
+  top: 0;
+  height: 100%;
+}
+html body .sub-header + .nav-drawer-min {
+  top: 121px;
+  height: calc(100% - 121px);
+}
+html body .sub-header + .nav-drawer-min.fixed {
+  position: fixed;
+  top: 57px;
+  height: calc(100% - 57px);
+}
+@media screen and (max-width: 900px) {
+  html body md-sidenav {
+    max-width: 250px;
+  }
+  html body md-sidenav md-list md-list-item a:before {
+    display: none !important;
+  }
+  html body md-sidenav md-list md-list-item:hover {
+    background: none;
+  }
+  html body md-sidenav md-list.last {
+    position: relative;
+  }
+  html body md-sidenav md-list.last md-list-item .md-button .showDesktop {
+    display: none;
+  }
+  html body md-sidenav md-list.last md-list-item .md-button .showMobile {
+    display: inline-block;
+  }
+  html body md-sidenav md-list.last md-list-item h3,
+  html body md-sidenav md-list.last md-list-item h4 {
+    max-width: 260px;
+  }
+  html body .sub-header {
+    padding: 17px 8px;
+  }
+  html body .sub-header.fixed {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=util-sideNav.css.map */

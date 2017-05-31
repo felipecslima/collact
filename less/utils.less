@@ -8,6 +8,12 @@ and open the template in the editor.
     Author     : felipe
 */
 
+@import  "font.less";
+@import  "util-toolbar.css";
+@import  "util-sideNav.css";
+@import  "util-card.css";
+@import  "util-icon.css";
+@import  "util-button.css";
 @import  "form.css";
 
 //####### VARIABLES - BASE #############
@@ -73,7 +79,7 @@ and open the template in the editor.
 @purple-800: #3D3545;
 
 
- //####### RESET #############
+//####### RESET #############
 .layout-padding-gt-sm, 
 .layout-padding-md, 
 .layout-padding > *, 
@@ -93,29 +99,54 @@ html{
             &-8{margin: 8px;}
             &-16{margin: 16px;}
             &-24{margin: 24px;}
+            &-force{
+                &-8{margin: 8px !important;}
+                &-16{margin: 16px !important;}
+                &-24{margin: 24px !important;}
+            }
             &-top{
                 &-none{margin-top:0 !important;}
                 &-8{margin-top:8px}
                 &-16{margin-top:16px}
                 &-24{margin-top:24px}
+                &-force{
+                    &-8{margin-top:8px !important}
+                    &-16{margin-top:16px  !important}
+                    &-24{margin-top:24px !important}
+                }
             }
             &-right{
                 &-none{margin-right:0 !important;}
                 &-8{margin-right:8px}
                 &-16{margin-right:16px}
                 &-24{margin-right:24px}
+                &-force{
+                    &-8{margin-right:8px !important}
+                    &-16{margin-right:16px  !important}
+                    &-24{margin-right:24px !important}
+                }
             }
             &-bottom{
                 &-none{margin-bottom:0 !important;}
                 &-8{margin-bottom:8px}
                 &-16{margin-bottom:16px}
                 &-24{margin-bottom:24px}
+                &-force{
+                    &-8{margin-bottom:8px !important}
+                    &-16{margin-bottom:16px  !important}
+                    &-24{margin-bottom:24px !important}
+                }
             }
             &-left{
                 &-none{margin-left:0 !important;}
                 &-8{margin-left:8px}
                 &-16{margin-left:16px}
                 &-24{margin-left:24px}
+                &-force{
+                    &-8{margin-left:8px !important}
+                    &-16{margin-left:16px  !important}
+                    &-24{margin-left:24px !important}
+                }
             }
         }
 
@@ -125,29 +156,54 @@ html{
             &-8{padding: 8px;}
             &-16{padding: 16px;}
             &-24{padding: 24px;}
+            &-force{
+                &-8{padding: 8px !important;}
+                &-16{padding: 16px !important;}
+                &-24{padding: 24px !important;}
+            }
             &-top{
                 &-none{padding-top:0 !important;}
                 &-8{padding-top:8px}
                 &-16{padding-top:16px}
                 &-24{padding-top:24px}
+                &-force{
+                    &-8{padding-top:8px !important}
+                    &-16{padding-top:16px !important}
+                    &-24{padding-top:24px !important}
+                }
             }
             &-right{
                 &-none{padding-right:0 !important;}
                 &-8{padding-right:8px}
                 &-16{padding-right:16px}
                 &-24{padding-right:24px}
+                &-force{
+                    &-8{padding-right:8px !important}
+                    &-16{padding-right:16px !important}
+                    &-24{padding-right:24px !important}
+                }
             }
             &-bottom{
                 &-none{padding-bottom:0 !important;}
                 &-8{padding-bottom:8px}
                 &-16{padding-bottom:16px}
                 &-24{padding-bottom:24px}
+                &-force{
+                    &-8{padding-bottom:8px !important}
+                    &-16{padding-bottom:16px !important}
+                    &-24{padding-bottom:24px !important}
+                }
             }
             &-left{
                 &-none{padding-left:0 !important;}
                 &-8{padding-left:8px}
                 &-16{padding-left:16px}
                 &-24{padding-left:24px}
+                &-force{
+                    &-8{padding-left:8px !important}
+                    &-16{padding-left:16px !important}
+                    &-24{padding-left:24px !important}
+                }
             }
         }
 
@@ -530,28 +586,6 @@ html{
             color: @grey-600;
         }
 
-        md-card{
-            border-radius: 4px;
-            background-color: #FAFAFA;
-            box-shadow: 0 0 2px 0 rgba(0,0,0,0.08), 0 2px 2px 0 rgba(0,0,0,0.16);
-            margin: 24px;
-        }
-
-        md-card + md-card{
-            margin-top: 0;
-        }
-
-        .side-by-side{
-            md-card {
-                margin-top: 0px;
-                margin-bottom: 24px;
-            }
-            md-card + md-card{
-                margin-left: 0;
-            }
-        }
-
-
         //################ PAGE DATAILS ################
         .details{
             p{
@@ -715,24 +749,6 @@ html{
         }
 
         @media screen and (max-width: 600px) {
-
-            //############ CARDS #############
-            md-card{
-                margin: 8px !important; 
-            }
-
-            md-card + md-card{
-                margin-top: 0;
-            }
-            .side-by-side{
-                md-card {
-                    margin-top: 0px;
-                    margin-bottom: 24px;
-                }
-                md-card + md-card{
-                    margin-left: 0;
-                }
-            }
 
             //####### MARGINS  #############
             .mb-margin{

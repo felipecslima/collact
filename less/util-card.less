@@ -1,0 +1,255 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31/05/2017, 14:31:53
+    Author     : felipelima
+*/
+
+md-card{
+    position: relative;
+    border-radius: 4px;
+    background-color: #FAFAFA;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.08), 0 2px 2px 0 rgba(0,0,0,0.16);
+    margin: 24px;
+
+    + md-card{
+        margin-top: 0;
+    }
+
+    h2{
+        color: #676767;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        position: relative;
+        small{
+            font-size: 14px;
+            font-family: "ProximaNovaLight";
+            font-weight: normal;
+            margin-left: 16px;
+        }
+        br+small{
+            margin-left: 0px;
+        }
+
+        .info-min{
+            position: absolute;
+            right: 24px;
+            top: 24px;
+            font-family: Verdana;
+            font-size: 10px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            color: #9e9e9e;
+        }
+    }
+
+    .new-session{
+        img,h2,small{
+            margin: 0;
+        }
+        small{
+            font-size: 16px;
+            margin-top: 4px;
+            display: block;
+        }
+    }
+
+    &.alert{
+        h2{
+            color: #676767;
+            font-size: 20px;
+            line-height: 24px;
+            margin: 4px;
+            md-icon{
+                margin-right: 16px;
+                color: #a2a2a2;
+            }
+        }
+    }
+}
+
+.side-by-side{
+    md-card {
+        margin-top: 0px;
+        margin-bottom: 24px;
+        + md-card{
+            margin-left: 0;
+        }
+    }
+}
+
+.cards-item{
+    margin-bottom: 24px;
+    + md-card{
+        margin-top: 0 !important;
+    }
+    md-card{
+        border: none;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0;
+        h2{
+            -webkit-border-top-left-radius: 4px;
+            -webkit-border-top-right-radius: 4px;
+            -moz-border-radius-topleft: 4px;
+            -moz-border-radius-topright: 4px;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+
+            margin: 0;
+            padding: 12px 0;
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            text-align: center;
+            color: #ffffff;
+            line-height: 1.4;
+        }
+
+        span{
+            -webkit-border-bottom-right-radius: 4px;
+            -webkit-border-bottom-left-radius: 4px;
+            -moz-border-radius-bottomright: 4px;
+            -moz-border-radius-bottomleft: 4px;
+            border-bottom-right-radius: 4px;
+            border-bottom-left-radius: 4px;
+
+            padding: 24px 0;
+            display: block;
+            font-size: 40px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            text-align: center;
+            color: #666666;
+            font-family: "ProximaNovaLight";
+        }
+        &.visit{
+            h2{
+                background-color: #d8527c;  
+            }
+        }
+        &.redeem{
+            h2{
+                background-color: #37bc92;  
+            }
+        }
+        &.score{
+            h2{
+                background-color: #9e9e9e;  
+            }
+        }
+    }
+}
+
+
+
+.bottom-card{
+    background-color: #f5f5f5;
+    box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05);
+    &.fixed{
+        position: fixed !important;
+        width: 100%;
+        bottom: 0 !important;
+        z-index: 999;
+        -webkit-border-radius: 0;
+        -webkit-border-bottom-right-radius: 4px;
+        -webkit-border-bottom-left-radius: 4px;
+        -moz-border-radius: 0;
+        -moz-border-radius-bottomright: 4px;
+        -moz-border-radius-bottomleft: 4px;
+        border-radius: 0;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+
+    }
+}
+
+@media screen and (max-width: 900px) {
+    html{
+        body{
+
+            md-card{
+                margin: 8px;
+                +md-card{
+                    margin-top: 0;
+                }
+                +.cards-item{
+                    md-card{
+                        margin-top: 0;
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+            .cards-item{
+                margin: 0px;
+                overflow-x: scroll;
+                + md-card{
+                    margin-top: 0 !important;
+                }
+                md-card{
+
+                    min-width: 250px;
+                    margin: 0 8px;
+                    &:last-of-type,
+                        &:first-of-type{
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html{
+        body{
+
+            md-card.new-session{
+                h2{
+                    margin: 16px 0 0 0 !important;
+                    width: 100%;
+                    text-align: center;
+                }
+                button{
+                    width: 100%;
+                }
+            }
+
+            md-card{
+                margin: 8px;
+                &.alert{
+                    h2{
+                        text-align: center;
+                        md-icon{
+                            display: block;
+                            width: 100%;
+                            text-align: center;
+                            margin-bottom: 16px;
+                        }
+                    }
+                }
+            }
+
+            .side-by-side{
+                md-card {
+                    margin-top: 0px;
+                    margin-bottom: 8px;
+                }
+                md-card + md-card{
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+}
