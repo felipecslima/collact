@@ -46,11 +46,6 @@ html body .md-toolbar-tools.menu-principal .adjust-text {
 html body .md-toolbar-tools + md-card {
   margin-top: 0;
 }
-/*.md-toolbar-tools{
-    + md-card{
-        margin-top: 0;
-    }
-}*/
 .md-toolbar-tools.breadcrumb,
 md-toolbar.breadcrumb {
   background: transparent;
@@ -83,6 +78,10 @@ md-toolbar.breadcrumb span.active {
 .md-toolbar-tools.breadcrumb + md-card,
 md-toolbar.breadcrumb + md-card {
   margin-top: 0;
+}
+.md-toolbar-tools.breadcrumb + md-card.ignore-top,
+md-toolbar.breadcrumb + md-card.ignore-top {
+  margin-top: 24px;
 }
 @media screen and (max-width: 900px) {
   html body .md-toolbar-tools > .md-button:first-child {
@@ -119,6 +118,14 @@ md-toolbar.breadcrumb + md-card {
   }
   html body .breadcrumb .md-toolbar-tools {
     min-width: 600px;
+  }
+  html body .md-toolbar-tools.breadcrumb + md-card,
+  html body md-toolbar.breadcrumb + md-card {
+    margin-top: 0;
+  }
+  html body .md-toolbar-tools.breadcrumb + md-card.ignore-top,
+  html body md-toolbar.breadcrumb + md-card.ignore-top {
+    margin-top: 8px;
   }
 }
 /*# sourceMappingURL=util-toolbar.css.map */

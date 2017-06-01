@@ -33,7 +33,7 @@ html{
                     margin-right: 24px;
                 }
             }
-            
+
             > .md-button:last-child{
                 margin: auto;
             }
@@ -61,12 +61,6 @@ html{
     }
 }
 
-/*.md-toolbar-tools{
-    + md-card{
-        margin-top: 0;
-    }
-}*/
-
 .md-toolbar-tools,md-toolbar{
     &.breadcrumb{
         background: transparent;
@@ -90,6 +84,9 @@ html{
         }
         + md-card{
             margin-top: 0;
+            &.ignore-top{
+                margin-top: 24px;
+            }
         }
     }
 }
@@ -142,6 +139,18 @@ html{
             overflow-x: scroll;
             .md-toolbar-tools{
                 min-width: 600px;
+            }
+        }
+
+
+        .md-toolbar-tools,md-toolbar{
+            &.breadcrumb{
+                + md-card{
+                    margin-top: 0;
+                    &.ignore-top{
+                        margin-top: 8px;
+                    }
+                }
             }
         }
     }
