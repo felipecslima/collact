@@ -182,8 +182,10 @@ html{
 
         form{
 
-            +md-card{
-                margin-top: 0;
+            md-card{
+                &:first-of-type{
+                    margin-top: 0;
+                }
             }
 
             button, select, html, textarea, input{

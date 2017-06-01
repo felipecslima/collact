@@ -161,7 +161,7 @@ html body div.upload .image-wrap md-input-container.md-default-theme:not(.md-inp
 html body div.upload .image-wrap md-input-container:not(.md-input-invalid).md-input-focused md-icon {
   color: #64BCB4 !important;
 }
-html body form + md-card {
+html body form md-card:first-of-type {
   margin-top: 0;
 }
 html body form button,
