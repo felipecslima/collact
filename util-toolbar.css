@@ -46,9 +46,11 @@ html body .md-toolbar-tools.menu-principal .adjust-text {
 html body .md-toolbar-tools + md-card {
   margin-top: 0;
 }
-.md-toolbar-tools + md-card {
-  margin-top: 0;
-}
+/*.md-toolbar-tools{
+    + md-card{
+        margin-top: 0;
+    }
+}*/
 .md-toolbar-tools.breadcrumb,
 md-toolbar.breadcrumb {
   background: transparent;
