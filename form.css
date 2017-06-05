@@ -6,7 +6,7 @@ and open the template in the editor.
 /* 
     Created on : Jan 31, 2017, 11:42:21 AM
     Author     : felipe
-*/
+*/ 
 html body md-checkbox.md-default-theme:not(.md-checked) .md-icon,
 html body md-checkbox:not(.md-checked) .md-icon {
   border-color: rgba(0, 0, 0, 0.35);
