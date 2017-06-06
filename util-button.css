@@ -28,6 +28,12 @@ and open the template in the editor.
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
+.md-button.no-min-width {
+  min-width: 1px;
+}
+.md-button.no-min-height {
+  min-height: 1px;
+}
 .md-button:not(.md-raised) {
   margin: 6px 8px 6px 8px;
 }
@@ -63,7 +69,7 @@ and open the template in the editor.
   box-shadow: none;
   background: #64bcb4;
   color: #fff;
-  padding: 14.5px 16px;
+  padding: 0 16px;
   line-height: 1;
 }
 .md-button.md-raised:not([disabled]) md-icon {
@@ -74,10 +80,10 @@ and open the template in the editor.
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
 }
 .md-button.md-raised:not([disabled]).icon {
-  padding: 11px 16px;
+  padding: 0 16px;
 }
 .md-button.md-raised:not([disabled]).icon.only {
-  padding: 6px 8px;
+  padding: 0 8px;
   min-width: 0;
 }
 .md-button.md-raised:not([disabled]).light {
@@ -87,6 +93,19 @@ and open the template in the editor.
 .md-button.md-raised:not([disabled]).flat {
   background: transparent;
   color: #41918a;
+}
+.md-button.md-raised:not([disabled]).flat:not([disabled]).md-raised.md-focused,
+.md-button.md-raised:not([disabled]).flat:not([disabled]).md-fab.md-focused {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.md-button.md-raised:not([disabled]).flat:hover,
+.md-button.md-raised:not([disabled]).flat:focus {
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: none;
+}
+.md-button.md-raised:not([disabled]).flat:not(.full) md-icon {
+  float: left;
+  margin-top: 5px;
 }
 .md-button.md-raised:not([disabled]).dense {
   padding: 0 16px;

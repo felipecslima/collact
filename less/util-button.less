@@ -24,6 +24,14 @@ and open the template in the editor.
     font-size: 16px;
     line-height: 1.1;
     border-radius: 2px;
+    &.no{
+        &-min-width{
+            min-width: 1px;
+        }
+        &-min-height{
+            min-height: 1px;
+        }
+    }
     &:not(.md-raised){
         margin: 6px 8px 6px 8px;
     }
@@ -65,12 +73,12 @@ and open the template in the editor.
             margin: auto;
         }
     }
-    
+
     &.md-raised:not([disabled]) {
         box-shadow: none;
         background: #64bcb4;
         color: #fff;
-        padding: 14.5px 16px;
+        padding: 0 16px;
         line-height: 1;
 
         md-icon{
@@ -83,9 +91,9 @@ and open the template in the editor.
         }
 
         &.icon{
-            padding: 11px 16px;
+            padding: 0 16px;
             &.only{
-                padding: 6px 8px;
+                padding: 0 8px;
                 min-width: 0;
             }
         }
@@ -98,6 +106,23 @@ and open the template in the editor.
         &.flat{
             background: transparent;
             color: #41918a;
+            &:not([disabled]).md-raised.md-focused, &:not([disabled]).md-fab.md-focused {
+                background-color: rgba(0,0,0,0.05);
+            }
+            &:hover,
+                &:focus{
+                background-color: rgba(0,0,0,0.05);
+                box-shadow: none;
+            }
+            &:not(.full){
+                md-icon{
+                    float: left;
+                    margin-top: 5px;
+                }
+            }
+            &.dense{
+
+            }
         }
 
         &.dense{
@@ -126,6 +151,7 @@ and open the template in the editor.
                 background-color: rgba(0,0,0,0.05);
                 box-shadow: none;
             }
+
         }
 
         &.opacity{

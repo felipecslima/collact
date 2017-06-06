@@ -18,7 +18,7 @@ html body md-sidenav {
 html body md-sidenav .nav-header {
   background-color: #ffffff;
   padding: 24px;
-  color: #9e9e9e;
+  color: #A6A6A6;
 }
 html body md-sidenav .nav-header h2 {
   font-family: "ProximaNovaSemiBold";
@@ -39,7 +39,7 @@ html body md-sidenav .nav-header a {
   font-size: 14px;
 }
 html body md-sidenav .nav-header a md-icon {
-  color: #9e9e9e !important;
+  color: #A6A6A6 !important;
   font-size: 16px !important;
   height: 16px;
   width: 16px;
@@ -75,7 +75,7 @@ html body md-sidenav md-list md-list-item i {
   float: left;
 }
 html body md-sidenav md-list md-list-item a {
-  color: #9e9e9e;
+  color: #A6A6A6;
   font-size: 16px;
   text-decoration: none;
   width: 100%;
@@ -115,7 +115,7 @@ html body md-sidenav md-list md-list-item a.soon:before {
   float: right;
 }
 html body md-sidenav md-list md-list-item a i + .md-list-item-text {
-  color: #9E9E9E;
+  color: #A6A6A6;
 }
 html body md-sidenav md-list md-list-item a i.active + .md-list-item-text {
   color: #666666;
@@ -154,7 +154,7 @@ html body md-sidenav md-list.last md-list-item h4 {
   margin: 0;
   font-family: "ProximaNova";
   font-size: 14px;
-  color: #9e9e9e;
+  color: #A6A6A6;
   font-weight: normal;
   width: 224px;
   white-space: nowrap;
@@ -311,7 +311,7 @@ html body .nav-drawer-min .md-button i {
   margin: 0 auto;
 }
 html body .nav-drawer-min .md-button md-icon {
-  color: #9e9e9e;
+  color: #A6A6A6;
   display: block;
   margin: 0 auto;
 }

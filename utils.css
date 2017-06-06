@@ -753,7 +753,7 @@ html body h6.info {
   font-family: "ProximaNova";
   font-size: 18px;
   line-height: 1;
-  color: #9E9E9E;
+  color: #A6A6A6;
   padding: 12px 16px;
 }
 html body .md-title {
@@ -881,7 +881,7 @@ html body .md-subheader .md-subheader-inner a {
   font-size: 16px;
   text-decoration: none;
   line-height: 50px;
-  color: #9E9E9E;
+  color: #A6A6A6;
   height: 48px;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
