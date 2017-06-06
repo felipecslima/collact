@@ -540,6 +540,7 @@ html body md-table-container table.md-table tbody.md-body.disableBefore:before {
   display: none;
 }
 html body md-table-container table.md-table tbody.md-body tr.md-row {
+  height: 56px;
   -webkit-transition: all 0.1s linear;
   -moz-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
