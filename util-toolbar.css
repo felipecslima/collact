@@ -112,9 +112,11 @@ md-toolbar.breadcrumb + md-card.ignore-top {
   }
   html body .breadcrumb {
     overflow-x: scroll;
+    min-height: 46px;
   }
   html body .breadcrumb .md-toolbar-tools {
     min-width: 600px;
+    height: 54px;
   }
   html body .md-toolbar-tools.breadcrumb + md-card,
   html body md-toolbar.breadcrumb + md-card {
