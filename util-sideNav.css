@@ -334,7 +334,7 @@ html body .sub-header + .nav-drawer-min.fixed {
 }
 @media screen and (max-width: 900px) {
   html body md-sidenav {
-    max-width: 250px;
+    max-width: 304px;
   }
   html body md-sidenav md-list md-list-item a:before {
     display: none !important;
