@@ -4,247 +4,255 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 31/05/2017, 14:31:53
+    Created on : 06/06/2017, 18:43:23
     Author     : felipelima
 */
-.md-button {
-  padding: 0 8px;
-  margin: 0;
-  min-width: 88px;
-  border-radius: 3px;
-  font-size: 14px;
-  text-align: center;
-  text-transform: none;
-  text-decoration: none;
-  border: none;
-  outline: none;
-  color: #41918a;
-  font-family: "ProximaNovaSemiBold";
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06/06/2017, 18:43:23
+    Author     : felipelima
+*/
+html body .infos-card .infos-text .md-button,
+html body md-table-container table.md-table tbody tr td .md-button,
+html body md-dialog .md-actions .md-button,
+html body md-dialog md-dialog-actions .md-button,
+html body .md-button {
   font-size: 16px;
-  line-height: 1.1;
-  border-radius: 2px;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-.md-button.no-min-width {
-  min-width: 1px;
-}
-.md-button.no-min-height {
-  min-height: 1px;
-}
-.md-button:not(.md-raised) {
-  margin: 6px 8px 6px 8px;
-}
-.md-button span {
-  vertical-align: text-bottom;
-}
-.md-button .md-ripple-container + .md-ripple-container {
-  display: none !important;
-}
-.md-button md-icon {
-  color: #41918a;
-}
-.md-button md-icon img {
-  width: 24px;
-  height: 24px;
-  vertical-align: super;
-}
-.md-button:not([disabled]):hover {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-.md-button.md-icon-button {
-  margin: 0;
-  min-width: 0;
-  min-height: 0;
-  height: 24px;
-  width: 24px;
-  padding: 0;
-}
-.md-button.md-fab md-icon {
-  margin: auto;
-}
-.md-button.md-raised:not([disabled]) {
-  box-shadow: none;
-  background: #64bcb4;
-  color: #fff;
-  padding: 0 16px;
-  line-height: 1;
-}
-.md-button.md-raised:not([disabled]) md-icon {
-  color: rgba(0, 0, 0, 0.35);
-}
-.md-button.md-raised:not([disabled]):hover {
-  background: #64bcb4;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
-}
-.md-button.md-raised:not([disabled]).icon {
-  padding: 0 16px;
-}
-.md-button.md-raised:not([disabled]).icon.only {
-  padding: 0 8px;
-  min-width: 0;
-}
-.md-button.md-raised:not([disabled]).light {
-  background: #98e0da;
-  color: rgba(0, 0, 0, 0.35);
-}
-.md-button.md-raised:not([disabled]).flat {
-  background: transparent;
-  color: #41918a;
-}
-.md-button.md-raised:not([disabled]).flat:not([disabled]).md-raised.md-focused,
-.md-button.md-raised:not([disabled]).flat:not([disabled]).md-fab.md-focused {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-.md-button.md-raised:not([disabled]).flat:hover,
-.md-button.md-raised:not([disabled]).flat:focus {
-  background-color: rgba(0, 0, 0, 0.05);
-  box-shadow: none;
-}
-.md-button.md-raised:not([disabled]).flat:not(.full) md-icon {
-  float: left;
-  margin-top: 5px;
-}
-.md-button.md-raised:not([disabled]).dense {
-  padding: 0 16px;
   height: 36px;
-  line-height: 38px;
-}
-.md-button.md-raised:not([disabled]).white {
+  color: #41918A;
   padding: 0 8px;
-  background-color: transparent;
-  color: #41918a !important;
   font-family: "ProximaNovaSemiBold";
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  text-transform: none;
 }
-.md-button.md-raised:not([disabled]).white span {
-  color: #41918a !important;
-  font-family: "ProximaNovaSemiBold";
-}
-.md-button.md-raised:not([disabled]).white md-icon {
-  color: #41918a;
-}
-.md-button.md-raised:not([disabled]).white:not([disabled]).md-raised.md-focused,
-.md-button.md-raised:not([disabled]).white:not([disabled]).md-fab.md-focused {
-  background: #ffffff;
-}
-.md-button.md-raised:not([disabled]).white:hover,
-.md-button.md-raised:not([disabled]).white:focus {
+html body .infos-card .infos-text .md-button:hover,
+html body md-table-container table.md-table tbody tr td .md-button:hover,
+html body md-dialog .md-actions .md-button:hover,
+html body md-dialog md-dialog-actions .md-button:hover,
+html body .md-button:hover {
   background-color: rgba(0, 0, 0, 0.05);
+}
+html body .infos-card .infos-text .md-button:not([disabled]).md-focused,
+html body md-table-container table.md-table tbody tr td .md-button:not([disabled]).md-focused,
+html body md-dialog .md-actions .md-button:not([disabled]).md-focused,
+html body md-dialog md-dialog-actions .md-button:not([disabled]).md-focused,
+html body .md-button:not([disabled]).md-focused {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+html body .infos-card .infos-text .md-button md-icon,
+html body md-table-container table.md-table tbody tr td .md-button md-icon,
+html body md-dialog .md-actions .md-button md-icon,
+html body md-dialog md-dialog-actions .md-button md-icon,
+html body .md-button md-icon {
+  color: rgba(0, 0, 0, 0.35);
+}
+html body .infos-card .infos-text .md-button span,
+html body md-table-container table.md-table tbody tr td .md-button span,
+html body md-dialog .md-actions .md-button span,
+html body md-dialog md-dialog-actions .md-button span,
+html body .md-button span {
+  display: inline-block;
+  margin-top: -10px;
+  height: 24px;
+  vertical-align: middle;
+  font-family: "ProximaNovaSemiBold";
+  color: inherit;
+  margin-right: 0;
+  font-size: 16px;
+}
+html body .infos-card .infos-text .md-button.icon,
+html body md-table-container table.md-table tbody tr td .md-button.icon,
+html body md-dialog .md-actions .md-button.icon,
+html body md-dialog md-dialog-actions .md-button.icon,
+html body .md-button.icon {
+  padding: 0 16px;
+  min-width: 0;
+}
+html body .infos-card .infos-text .md-button.icon md-icon,
+html body md-table-container table.md-table tbody tr td .md-button.icon md-icon,
+html body md-dialog .md-actions .md-button.icon md-icon,
+html body md-dialog md-dialog-actions .md-button.icon md-icon,
+html body .md-button.icon md-icon {
+  color: rgba(0, 0, 0, 0.35);
+}
+html body .infos-card .infos-text .md-button.icon md-icon + span,
+html body md-table-container table.md-table tbody tr td .md-button.icon md-icon + span,
+html body md-dialog .md-actions .md-button.icon md-icon + span,
+html body md-dialog md-dialog-actions .md-button.icon md-icon + span,
+html body .md-button.icon md-icon + span {
+  margin-left: 8px;
+}
+html body .infos-card .infos-text .md-button.md-raised:not([disabled]),
+html body md-table-container table.md-table tbody tr td .md-button.md-raised:not([disabled]),
+html body md-dialog .md-actions .md-button.md-raised:not([disabled]),
+html body md-dialog md-dialog-actions .md-button.md-raised:not([disabled]),
+html body .md-button.md-raised:not([disabled]) {
+  height: 46px;
+  background-color: #64BCB4;
+  color: #fff;
   box-shadow: none;
 }
-.md-button.md-raised:not([disabled]).opacity-404 {
-  background-color: rgba(0, 0, 0, 0.1);
-  border: solid 1px #ffffff;
-  color: #ffffff;
-  padding-left: 32px;
-  padding-right: 32px;
+html body .infos-card .infos-text .md-button.md-raised:not([disabled]) md-icon,
+html body md-table-container table.md-table tbody tr td .md-button.md-raised:not([disabled]) md-icon,
+html body md-dialog .md-actions .md-button.md-raised:not([disabled]) md-icon,
+html body md-dialog md-dialog-actions .md-button.md-raised:not([disabled]) md-icon,
+html body .md-button.md-raised:not([disabled]) md-icon {
+  color: rgba(0, 0, 0, 0.35);
 }
-.md-button.md-raised:not([disabled]).opacity-404:not([disabled]).md-raised.md-focused,
-.md-button.md-raised:not([disabled]).opacity-404:not([disabled]).md-fab.md-focused {
-  background-color: rgba(0, 0, 0, 0.1);
+html body .infos-card .infos-text .md-button.md-raised:not([disabled]):hover,
+html body md-table-container table.md-table tbody tr td .md-button.md-raised:not([disabled]):hover,
+html body md-dialog .md-actions .md-button.md-raised:not([disabled]):hover,
+html body md-dialog md-dialog-actions .md-button.md-raised:not([disabled]):hover,
+html body .md-button.md-raised:not([disabled]):hover {
+  background-color: #64BCB4;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08), 0 2px 2px 0 rgba(0, 0, 0, 0.16);
 }
-.md-button.md-raised:not([disabled]).full {
-  width: 100%;
-  display: block;
+html body .infos-card .infos-text .md-button.md-raised:not([disabled]):not([disabled]).md-focused,
+html body md-table-container table.md-table tbody tr td .md-button.md-raised:not([disabled]):not([disabled]).md-focused,
+html body md-dialog .md-actions .md-button.md-raised:not([disabled]):not([disabled]).md-focused,
+html body md-dialog md-dialog-actions .md-button.md-raised:not([disabled]):not([disabled]).md-focused,
+html body .md-button.md-raised:not([disabled]):not([disabled]).md-focused {
+  background-color: #64BCB4;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08), 0 2px 2px 0 rgba(0, 0, 0, 0.16);
 }
-.md-button.md-raised:not([disabled]).no-margin {
-  margin: 0;
+html body .infos-card .infos-text .md-button.md-raised:not([disabled]).light,
+html body md-table-container table.md-table tbody tr td .md-button.md-raised:not([disabled]).light,
+html body md-dialog .md-actions .md-button.md-raised:not([disabled]).light,
+html body md-dialog md-dialog-actions .md-button.md-raised:not([disabled]).light,
+html body .md-button.md-raised:not([disabled]).light {
+  background-color: #98E0DA;
+  color: rgba(0, 0, 0, 0.35);
 }
-.md-button.md-raised:not([disabled]).no-padding-vertical {
-  padding-left: 0;
-  padding-right: 0;
+html body .infos-card .infos-text .md-button.md-raised:not([disabled]).light:hover,
+html body md-table-container table.md-table tbody tr td .md-button.md-raised:not([disabled]).light:hover,
+html body md-dialog .md-actions .md-button.md-raised:not([disabled]).light:hover,
+html body md-dialog md-dialog-actions .md-button.md-raised:not([disabled]).light:hover,
+html body .md-button.md-raised:not([disabled]).light:hover {
+  background-color: #98E0DA;
 }
-.md-button.md-raised:not([disabled]).bt-sair {
-  color: #fff !important;
+html body .infos-card .infos-text .md-button.md-raised:not([disabled]).light:not([disabled]).md-focused,
+html body md-table-container table.md-table tbody tr td .md-button.md-raised:not([disabled]).light:not([disabled]).md-focused,
+html body md-dialog .md-actions .md-button.md-raised:not([disabled]).light:not([disabled]).md-focused,
+html body md-dialog md-dialog-actions .md-button.md-raised:not([disabled]).light:not([disabled]).md-focused,
+html body .md-button.md-raised:not([disabled]).light:not([disabled]).md-focused {
+  background-color: #98E0DA;
+}
+html body .infos-card .infos-text .md-button.md-raised:not([disabled]).dense,
+html body md-table-container table.md-table tbody tr td .md-button.md-raised:not([disabled]).dense,
+html body md-dialog .md-actions .md-button.md-raised:not([disabled]).dense,
+html body md-dialog md-dialog-actions .md-button.md-raised:not([disabled]).dense,
+html body .md-button.md-raised:not([disabled]).dense {
+  height: 36px;
+}
+html body .infos-card .infos-text .md-button.md-raised:not([disabled]).logout,
+html body md-table-container table.md-table tbody tr td .md-button.md-raised:not([disabled]).logout,
+html body md-dialog .md-actions .md-button.md-raised:not([disabled]).logout,
+html body md-dialog md-dialog-actions .md-button.md-raised:not([disabled]).logout,
+html body .md-button.md-raised:not([disabled]).logout {
+  color: #fff;
   background-color: rgba(0, 0, 0, 0.16);
 }
-.md-button.md-raised:not([disabled]).bt-sair:hover {
+html body .infos-card .infos-text .md-button.md-raised:not([disabled]).logout:hover,
+html body md-table-container table.md-table tbody tr td .md-button.md-raised:not([disabled]).logout:hover,
+html body md-dialog .md-actions .md-button.md-raised:not([disabled]).logout:hover,
+html body md-dialog md-dialog-actions .md-button.md-raised:not([disabled]).logout:hover,
+html body .md-button.md-raised:not([disabled]).logout:hover {
   background: rgba(0, 0, 0, 0.35);
 }
-.md-button:not([disabled]).md-raised.md-focused,
-.md-button:not([disabled]).md-fab.md-focused {
-  background: #64bcb4;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+html body .infos-card .infos-text .md-button.only,
+html body md-table-container table.md-table tbody tr td .md-button.only,
+html body md-dialog .md-actions .md-button.only,
+html body md-dialog md-dialog-actions .md-button.only,
+html body .md-button.only {
+  padding: 0 8px;
 }
-.md-button.bt-edit {
-  padding: 0;
-  width: 24px;
-  height: 24px;
-  min-width: 0;
-  min-height: 0;
-  line-height: 1.1;
+html body .infos-card .infos-text .md-button.white,
+html body md-table-container table.md-table tbody tr td .md-button.white,
+html body md-dialog .md-actions .md-button.white,
+html body md-dialog md-dialog-actions .md-button.white,
+html body .md-button.white {
+  padding: 0 8px;
 }
-.md-button.bt-edit md-icon {
-  color: rgba(0, 0, 0, 0.35);
+html body .infos-card .infos-text .md-button.white md-icon,
+html body md-table-container table.md-table tbody tr td .md-button.white md-icon,
+html body md-dialog .md-actions .md-button.white md-icon,
+html body md-dialog md-dialog-actions .md-button.white md-icon,
+html body .md-button.white md-icon {
+  color: #41918A;
 }
-.md-button.bt-edit:hover md-icon {
-  color: #41918a;
-}
-.md-button[disabled] {
-  color: rgba(0, 0, 0, 0.16);
-  background-color: transparent;
-}
-.no-image {
-  box-sizing: border-box;
-  overflow: hidden;
+html body .infos-card .infos-text .md-button.full,
+html body md-table-container table.md-table tbody tr td .md-button.full,
+html body md-dialog .md-actions .md-button.full,
+html body md-dialog md-dialog-actions .md-button.full,
+html body .md-button.full {
   width: 100%;
-  height: 176px;
-  border: 1px solid rgba(0, 0, 0, 0.16);
-  border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.05);
 }
-.no-image md-icon {
-  display: block;
-  color: rgba(0, 0, 0, 0.16);
-  font-size: 40px;
-  height: 40px;
-  width: 40px;
+html body .infos-card .infos-text .md-button.md-icon-button,
+html body md-table-container table.md-table tbody tr td .md-button.md-icon-button,
+html body md-dialog .md-actions .md-button.md-icon-button,
+html body md-dialog md-dialog-actions .md-button.md-icon-button,
+html body .md-button.md-icon-button {
+  padding: 0;
+  height: 24px;
+  width: 24px;
+  min-width: 0px;
+  min-height: 0px;
+  margin: 0;
 }
-.no-image span {
-  display: block;
-  color: rgba(0, 0, 0, 0.16);
+html body .infos-card .infos-text .md-button.md-icon-button.align-icon-right,
+html body md-table-container table.md-table tbody tr td .md-button.md-icon-button.align-icon-right,
+html body md-dialog .md-actions .md-button.md-icon-button.align-icon-right,
+html body md-dialog md-dialog-actions .md-button.md-icon-button.align-icon-right,
+html body .md-button.md-icon-button.align-icon-right {
+  position: absolute;
+  right: 0;
 }
-.no-image img {
-  border-radius: 4px;
+html body .infos-card .infos-text .md-button.md-fab md-icon,
+html body md-table-container table.md-table tbody tr td .md-button.md-fab md-icon,
+html body md-dialog .md-actions .md-button.md-fab md-icon,
+html body md-dialog md-dialog-actions .md-button.md-fab md-icon,
+html body .md-button.md-fab md-icon {
+  margin: auto;
 }
-md-fab-speed-dial.md-fab-bottom-right {
-  right: 40px;
+html body .infos-card .infos-text .md-button .md-ripple-container .md-ripple-placed,
+html body md-table-container table.md-table tbody tr td .md-button .md-ripple-container .md-ripple-placed,
+html body md-dialog .md-actions .md-button .md-ripple-container .md-ripple-placed,
+html body md-dialog md-dialog-actions .md-button .md-ripple-container .md-ripple-placed,
+html body .md-button .md-ripple-container .md-ripple-placed {
+  background: rgba(0, 0, 0, 0.16) !important;
+  border-color: rgba(0, 0, 0, 0.16) !important;
 }
-md-menu-item > .md-button {
-  margin: 0 !important;
+html body md-fab-speed-dial {
+  position: fixed !important;
 }
-.mfb-component__button--main,
-.mfb-component__button--child {
-  background: #64bcb4;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+html body md-fab-speed-dial .button-speed-dial {
+  background-color: #64bcb4 !important;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16), 0 0 4px 0 rgba(0, 0, 0, 0.12) !important;
 }
-.mfb-component__child-icon,
-.mfb-component__child-icon {
-  line-height: 40px;
-  font-size: 18px;
+html body md-fab-speed-dial .button-speed-dial md-icon {
+  color: #ffffff !important;
 }
-.mfb-component__button--child {
-  height: 40px;
-  width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+html body md-fab-speed-dial:not(.md-hover-full).md-is-open md-fab-trigger button {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.12) !important;
 }
-.mfb-component__list > li {
-  right: 7px;
-  margin: 21px 0;
+html body md-fab-speed-dial md-fab-actions .md-fab-action-item:first-of-type {
+  margin-bottom: 6px;
 }
-.mfb-component__list > li:first-of-type {
-  top: -15px;
+html body md-fab-speed-dial md-fab-actions .md-fab-action-item .md-button {
+  margin: 6px 8px;
+  background-color: #98e0da !important;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16), 0 0 4px 0 rgba(0, 0, 0, 0.12) !important;
 }
-.mfb-component--br .mfb-component__list [data-mfb-label]:after,
-.mfb-component--tr .mfb-component__list [data-mfb-label]:after {
-  content: attr(data-mfb-label);
-  right: 57px;
+html body md-fab-speed-dial md-fab-actions .md-fab-action-item .md-button md-icon {
+  color: #649490 !important;
 }
-.mfb-component--br {
-  right: 24px;
+html body md-fab-speed-dial md-fab-actions .md-fab-action-item .md-button:hover {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.12) !important;
 }
 /*# sourceMappingURL=util-button.css.map */
