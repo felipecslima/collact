@@ -20,6 +20,25 @@ and open the template in the editor.
 
 html{
     body{
+
+        md-menu-content{
+            border-radius: 4px;
+            background-color: #fafafa;
+            box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.16), 0 0 6px 0 rgba(0, 0, 0, 0.08);
+            .md-button{
+                padding: 0 16px;
+                font-family: ProximaNova;
+                font-size: 16px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                color: #666666;
+                display: block;
+                height: 46px;
+            }
+        }
+
+        .details .md-button, 
         .infos-card .infos-text .md-button,
         md-table-container table.md-table tbody tr td .md-button,
         md-dialog .md-actions .md-button, md-dialog md-dialog-actions .md-button,
@@ -33,6 +52,7 @@ html{
             display: flex;
             justify-content: center;
             text-transform: none;
+            min-width: 64px;
             &:hover{
                 background-color: rgba(0,0,0,0.05);
             }
@@ -51,6 +71,7 @@ html{
                 color: inherit;
                 margin-right: 0;
                 font-size: 16px;
+                line-height: inherit;
             }
             &.icon{
                 padding: 0 16px;
@@ -67,6 +88,7 @@ html{
                 background-color: #64BCB4;
                 color: #fff;
                 box-shadow: none;
+                padding: 0 16px;
                 md-icon{
                     color: rgba(0,0,0,0.35);
                 }
@@ -103,7 +125,6 @@ html{
                 padding: 0 8px;
             }
             &.white{
-                padding: 0 8px;
                 md-icon{
                     color: #41918A;
                 }

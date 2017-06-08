@@ -16,6 +16,23 @@ and open the template in the editor.
     Created on : 06/06/2017, 18:43:23
     Author     : felipelima
 */
+html body md-menu-content {
+  border-radius: 4px;
+  background-color: #fafafa;
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.16), 0 0 6px 0 rgba(0, 0, 0, 0.08);
+}
+html body md-menu-content .md-button {
+  padding: 0 16px;
+  font-family: ProximaNova;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  color: #666666;
+  display: block;
+  height: 46px;
+}
+html body .details .md-button,
 html body .infos-card .infos-text .md-button,
 html body md-table-container table.md-table tbody tr td .md-button,
 html body md-dialog .md-actions .md-button,
@@ -30,7 +47,9 @@ html body .md-button {
   display: flex;
   justify-content: center;
   text-transform: none;
+  min-width: 64px;
 }
+html body .details .md-button:hover,
 html body .infos-card .infos-text .md-button:hover,
 html body md-table-container table.md-table tbody tr td .md-button:hover,
 html body md-dialog .md-actions .md-button:hover,
@@ -38,6 +57,7 @@ html body md-dialog md-dialog-actions .md-button:hover,
 html body .md-button:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
+html body .details .md-button:not([disabled]).md-focused,
 html body .infos-card .infos-text .md-button:not([disabled]).md-focused,
 html body md-table-container table.md-table tbody tr td .md-button:not([disabled]).md-focused,
 html body md-dialog .md-actions .md-button:not([disabled]).md-focused,
@@ -45,6 +65,7 @@ html body md-dialog md-dialog-actions .md-button:not([disabled]).md-focused,
 html body .md-button:not([disabled]).md-focused {
   background-color: rgba(0, 0, 0, 0.05);
 }
+html body .details .md-button md-icon,
 html body .infos-card .infos-text .md-button md-icon,
 html body md-table-container table.md-table tbody tr td .md-button md-icon,
 html body md-dialog .md-actions .md-button md-icon,
@@ -52,6 +73,7 @@ html body md-dialog md-dialog-actions .md-button md-icon,
 html body .md-button md-icon {
   color: rgba(0, 0, 0, 0.35);
 }
+html body .details .md-button span,
 html body .infos-card .infos-text .md-button span,
 html body md-table-container table.md-table tbody tr td .md-button span,
 html body md-dialog .md-actions .md-button span,
@@ -65,7 +87,9 @@ html body .md-button span {
   color: inherit;
   margin-right: 0;
   font-size: 16px;
+  line-height: inherit;
 }
+html body .details .md-button.icon,
 html body .infos-card .infos-text .md-button.icon,
 html body md-table-container table.md-table tbody tr td .md-button.icon,
 html body md-dialog .md-actions .md-button.icon,
@@ -74,6 +98,7 @@ html body .md-button.icon {
   padding: 0 16px;
   min-width: 0;
 }
+html body .details .md-button.icon md-icon,
 html body .infos-card .infos-text .md-button.icon md-icon,
 html body md-table-container table.md-table tbody tr td .md-button.icon md-icon,
 html body md-dialog .md-actions .md-button.icon md-icon,
@@ -81,6 +106,7 @@ html body md-dialog md-dialog-actions .md-button.icon md-icon,
 html body .md-button.icon md-icon {
   color: rgba(0, 0, 0, 0.35);
 }
+html body .details .md-button.icon md-icon + span,
 html body .infos-card .infos-text .md-button.icon md-icon + span,
 html body md-table-container table.md-table tbody tr td .md-button.icon md-icon + span,
 html body md-dialog .md-actions .md-button.icon md-icon + span,
@@ -88,6 +114,7 @@ html body md-dialog md-dialog-actions .md-button.icon md-icon + span,
 html body .md-button.icon md-icon + span {
   margin-left: 8px;
 }
+html body .details .md-button.md-raised:not([disabled]),
 html body .infos-card .infos-text .md-button.md-raised:not([disabled]),
 html body md-table-container table.md-table tbody tr td .md-button.md-raised:not([disabled]),
 html body md-dialog .md-actions .md-button.md-raised:not([disabled]),
@@ -97,7 +124,9 @@ html body .md-button.md-raised:not([disabled]) {
   background-color: #64BCB4;
   color: #fff;
   box-shadow: none;
+  padding: 0 16px;
 }
+html body .details .md-button.md-raised:not([disabled]) md-icon,
 html body .infos-card .infos-text .md-button.md-raised:not([disabled]) md-icon,
 html body md-table-container table.md-table tbody tr td .md-button.md-raised:not([disabled]) md-icon,
 html body md-dialog .md-actions .md-button.md-raised:not([disabled]) md-icon,
@@ -105,6 +134,7 @@ html body md-dialog md-dialog-actions .md-button.md-raised:not([disabled]) md-ic
 html body .md-button.md-raised:not([disabled]) md-icon {
   color: rgba(0, 0, 0, 0.35);
 }
+html body .details .md-button.md-raised:not([disabled]):hover,
 html body .infos-card .infos-text .md-button.md-raised:not([disabled]):hover,
 html body md-table-container table.md-table tbody tr td .md-button.md-raised:not([disabled]):hover,
 html body md-dialog .md-actions .md-button.md-raised:not([disabled]):hover,
@@ -113,6 +143,7 @@ html body .md-button.md-raised:not([disabled]):hover {
   background-color: #64BCB4;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08), 0 2px 2px 0 rgba(0, 0, 0, 0.16);
 }
+html body .details .md-button.md-raised:not([disabled]):not([disabled]).md-focused,
 html body .infos-card .infos-text .md-button.md-raised:not([disabled]):not([disabled]).md-focused,
 html body md-table-container table.md-table tbody tr td .md-button.md-raised:not([disabled]):not([disabled]).md-focused,
 html body md-dialog .md-actions .md-button.md-raised:not([disabled]):not([disabled]).md-focused,
@@ -121,6 +152,7 @@ html body .md-button.md-raised:not([disabled]):not([disabled]).md-focused {
   background-color: #64BCB4;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08), 0 2px 2px 0 rgba(0, 0, 0, 0.16);
 }
+html body .details .md-button.md-raised:not([disabled]).light,
 html body .infos-card .infos-text .md-button.md-raised:not([disabled]).light,
 html body md-table-container table.md-table tbody tr td .md-button.md-raised:not([disabled]).light,
 html body md-dialog .md-actions .md-button.md-raised:not([disabled]).light,
@@ -129,6 +161,7 @@ html body .md-button.md-raised:not([disabled]).light {
   background-color: #98E0DA;
   color: rgba(0, 0, 0, 0.35);
 }
+html body .details .md-button.md-raised:not([disabled]).light:hover,
 html body .infos-card .infos-text .md-button.md-raised:not([disabled]).light:hover,
 html body md-table-container table.md-table tbody tr td .md-button.md-raised:not([disabled]).light:hover,
 html body md-dialog .md-actions .md-button.md-raised:not([disabled]).light:hover,
@@ -136,6 +169,7 @@ html body md-dialog md-dialog-actions .md-button.md-raised:not([disabled]).light
 html body .md-button.md-raised:not([disabled]).light:hover {
   background-color: #98E0DA;
 }
+html body .details .md-button.md-raised:not([disabled]).light:not([disabled]).md-focused,
 html body .infos-card .infos-text .md-button.md-raised:not([disabled]).light:not([disabled]).md-focused,
 html body md-table-container table.md-table tbody tr td .md-button.md-raised:not([disabled]).light:not([disabled]).md-focused,
 html body md-dialog .md-actions .md-button.md-raised:not([disabled]).light:not([disabled]).md-focused,
@@ -143,6 +177,7 @@ html body md-dialog md-dialog-actions .md-button.md-raised:not([disabled]).light
 html body .md-button.md-raised:not([disabled]).light:not([disabled]).md-focused {
   background-color: #98E0DA;
 }
+html body .details .md-button.md-raised:not([disabled]).dense,
 html body .infos-card .infos-text .md-button.md-raised:not([disabled]).dense,
 html body md-table-container table.md-table tbody tr td .md-button.md-raised:not([disabled]).dense,
 html body md-dialog .md-actions .md-button.md-raised:not([disabled]).dense,
@@ -150,6 +185,7 @@ html body md-dialog md-dialog-actions .md-button.md-raised:not([disabled]).dense
 html body .md-button.md-raised:not([disabled]).dense {
   height: 36px;
 }
+html body .details .md-button.md-raised:not([disabled]).logout,
 html body .infos-card .infos-text .md-button.md-raised:not([disabled]).logout,
 html body md-table-container table.md-table tbody tr td .md-button.md-raised:not([disabled]).logout,
 html body md-dialog .md-actions .md-button.md-raised:not([disabled]).logout,
@@ -158,6 +194,7 @@ html body .md-button.md-raised:not([disabled]).logout {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.16);
 }
+html body .details .md-button.md-raised:not([disabled]).logout:hover,
 html body .infos-card .infos-text .md-button.md-raised:not([disabled]).logout:hover,
 html body md-table-container table.md-table tbody tr td .md-button.md-raised:not([disabled]).logout:hover,
 html body md-dialog .md-actions .md-button.md-raised:not([disabled]).logout:hover,
@@ -165,6 +202,7 @@ html body md-dialog md-dialog-actions .md-button.md-raised:not([disabled]).logou
 html body .md-button.md-raised:not([disabled]).logout:hover {
   background: rgba(0, 0, 0, 0.35);
 }
+html body .details .md-button.only,
 html body .infos-card .infos-text .md-button.only,
 html body md-table-container table.md-table tbody tr td .md-button.only,
 html body md-dialog .md-actions .md-button.only,
@@ -172,13 +210,7 @@ html body md-dialog md-dialog-actions .md-button.only,
 html body .md-button.only {
   padding: 0 8px;
 }
-html body .infos-card .infos-text .md-button.white,
-html body md-table-container table.md-table tbody tr td .md-button.white,
-html body md-dialog .md-actions .md-button.white,
-html body md-dialog md-dialog-actions .md-button.white,
-html body .md-button.white {
-  padding: 0 8px;
-}
+html body .details .md-button.white md-icon,
 html body .infos-card .infos-text .md-button.white md-icon,
 html body md-table-container table.md-table tbody tr td .md-button.white md-icon,
 html body md-dialog .md-actions .md-button.white md-icon,
@@ -186,6 +218,7 @@ html body md-dialog md-dialog-actions .md-button.white md-icon,
 html body .md-button.white md-icon {
   color: #41918A;
 }
+html body .details .md-button.full,
 html body .infos-card .infos-text .md-button.full,
 html body md-table-container table.md-table tbody tr td .md-button.full,
 html body md-dialog .md-actions .md-button.full,
@@ -193,6 +226,7 @@ html body md-dialog md-dialog-actions .md-button.full,
 html body .md-button.full {
   width: 100%;
 }
+html body .details .md-button.md-icon-button,
 html body .infos-card .infos-text .md-button.md-icon-button,
 html body md-table-container table.md-table tbody tr td .md-button.md-icon-button,
 html body md-dialog .md-actions .md-button.md-icon-button,
@@ -205,6 +239,7 @@ html body .md-button.md-icon-button {
   min-height: 0px;
   margin: 0;
 }
+html body .details .md-button.md-icon-button.align-icon-right,
 html body .infos-card .infos-text .md-button.md-icon-button.align-icon-right,
 html body md-table-container table.md-table tbody tr td .md-button.md-icon-button.align-icon-right,
 html body md-dialog .md-actions .md-button.md-icon-button.align-icon-right,
@@ -213,6 +248,7 @@ html body .md-button.md-icon-button.align-icon-right {
   position: absolute;
   right: 0;
 }
+html body .details .md-button.md-fab md-icon,
 html body .infos-card .infos-text .md-button.md-fab md-icon,
 html body md-table-container table.md-table tbody tr td .md-button.md-fab md-icon,
 html body md-dialog .md-actions .md-button.md-fab md-icon,
@@ -220,6 +256,7 @@ html body md-dialog md-dialog-actions .md-button.md-fab md-icon,
 html body .md-button.md-fab md-icon {
   margin: auto;
 }
+html body .details .md-button .md-ripple-container .md-ripple-placed,
 html body .infos-card .infos-text .md-button .md-ripple-container .md-ripple-placed,
 html body md-table-container table.md-table tbody tr td .md-button .md-ripple-container .md-ripple-placed,
 html body md-dialog .md-actions .md-button .md-ripple-container .md-ripple-placed,
