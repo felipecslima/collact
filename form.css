@@ -176,9 +176,6 @@ html body form textarea,
 html body form input {
   font-family: "ProximaNova";
 }
-html body form md-input-container {
-  margin: 25px 0 0 0;
-}
 html body form md-input-container .md-input {
   line-height: 1;
   padding: 8px 0!important;
