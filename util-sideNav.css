@@ -332,6 +332,11 @@ html body .sub-header + .nav-drawer-min.fixed {
   top: 57px;
   height: calc(100% - 57px);
 }
+@media screen and (max-width: 1280px) {
+  html body .nav-drawer-min {
+    display: none;
+  }
+}
 @media screen and (max-width: 900px) {
   html body md-sidenav {
     max-width: 304px;
