@@ -95,7 +95,7 @@ html body md-table-container table.md-table tbody tr td .md-button.icon,
 html body md-dialog .md-actions .md-button.icon,
 html body md-dialog md-dialog-actions .md-button.icon,
 html body .md-button.icon {
-  padding: 0 16px;
+  padding: 0 8px;
   min-width: 0;
 }
 html body .details .md-button.icon md-icon,
