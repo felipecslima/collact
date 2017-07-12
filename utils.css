@@ -93,6 +93,9 @@ and open the template in the editor.
 html body .margin-none {
   margin: 0 !important;
 }
+html body .margin-4 {
+  margin: 4px;
+}
 html body .margin-8 {
   margin: 8px;
 }
@@ -107,6 +110,9 @@ html body .margin-32 {
 }
 html body .margin-40 {
   margin: 40px;
+}
+html body .margin-force-4 {
+  margin: 4px !important;
 }
 html body .margin-force-8 {
   margin: 8px !important;
@@ -126,6 +132,9 @@ html body .margin-force-40 {
 html body .margin-top-none {
   margin-top: 0 !important;
 }
+html body .margin-top-4 {
+  margin-top: 4px;
+}
 html body .margin-top-8 {
   margin-top: 8px;
 }
@@ -140,6 +149,9 @@ html body .margin-top-32 {
 }
 html body .margin-top-40 {
   margin-top: 40px;
+}
+html body .margin-top-force-4 {
+  margin-top: 4px !important;
 }
 html body .margin-top-force-8 {
   margin-top: 8px !important;
@@ -159,6 +171,9 @@ html body .margin-top-force-40 {
 html body .margin-right-none {
   margin-right: 0 !important;
 }
+html body .margin-right-4 {
+  margin-right: 4px;
+}
 html body .margin-right-8 {
   margin-right: 8px;
 }
@@ -173,6 +188,9 @@ html body .margin-right-32 {
 }
 html body .margin-right-40 {
   margin-right: 40px;
+}
+html body .margin-right-force-4 {
+  margin-right: 4px !important;
 }
 html body .margin-right-force-8 {
   margin-right: 8px !important;
@@ -192,6 +210,9 @@ html body .margin-right-force-40 {
 html body .margin-bottom-none {
   margin-bottom: 0 !important;
 }
+html body .margin-bottom-4 {
+  margin-bottom: 4px;
+}
 html body .margin-bottom-8 {
   margin-bottom: 8px;
 }
@@ -206,6 +227,9 @@ html body .margin-bottom-32 {
 }
 html body .margin-bottom-40 {
   margin-bottom: 40px;
+}
+html body .margin-bottom-force-4 {
+  margin-bottom: 4px !important;
 }
 html body .margin-bottom-force-8 {
   margin-bottom: 8px !important;
@@ -225,6 +249,9 @@ html body .margin-bottom-force-40 {
 html body .margin-left-none {
   margin-left: 0 !important;
 }
+html body .margin-left-4 {
+  margin-left: 4px;
+}
 html body .margin-left-8 {
   margin-left: 8px;
 }
@@ -234,8 +261,14 @@ html body .margin-left-16 {
 html body .margin-left-24 {
   margin-left: 24px;
 }
-html body .margin-left-24 {
-  margin-left: 24px;
+html body .margin-left-32 {
+  margin-left: 32px;
+}
+html body .margin-left-40 {
+  margin-left: 40px;
+}
+html body .margin-left-force-4 {
+  margin-left: 4px !important;
 }
 html body .margin-left-force-8 {
   margin-left: 8px !important;
@@ -249,8 +282,14 @@ html body .margin-left-force-24 {
 html body .margin-left-force-32 {
   margin-left: 32px !important;
 }
+html body .margin-left-force-40 {
+  margin-left: 40px !important;
+}
 html body .padding-none {
   padding: 0 !important;
+}
+html body .padding-4 {
+  padding: 4px;
 }
 html body .padding-8 {
   padding: 8px;
@@ -266,6 +305,9 @@ html body .padding-32 {
 }
 html body .padding-40 {
   padding: 40px;
+}
+html body .padding-force-4 {
+  padding: 4px !important;
 }
 html body .padding-force-8 {
   padding: 8px !important;
@@ -285,6 +327,9 @@ html body .padding-force-40 {
 html body .padding-top-none {
   padding-top: 0 !important;
 }
+html body .padding-top-4 {
+  padding-top: 4px;
+}
 html body .padding-top-8 {
   padding-top: 8px;
 }
@@ -299,6 +344,9 @@ html body .padding-top-32 {
 }
 html body .padding-top-40 {
   padding-top: 40px;
+}
+html body .padding-top-force-4 {
+  padding-top: 4px !important;
 }
 html body .padding-top-force-8 {
   padding-top: 8px !important;
@@ -318,6 +366,9 @@ html body .padding-top-force-40 {
 html body .padding-right-none {
   padding-right: 0 !important;
 }
+html body .padding-right-4 {
+  padding-right: 4px;
+}
 html body .padding-right-8 {
   padding-right: 8px;
 }
@@ -332,6 +383,9 @@ html body .padding-right-32 {
 }
 html body .padding-right-40 {
   padding-right: 40px;
+}
+html body .padding-right-force-4 {
+  padding-right: 4px !important;
 }
 html body .padding-right-force-8 {
   padding-right: 8px !important;
@@ -351,6 +405,9 @@ html body .padding-right-force-40 {
 html body .padding-bottom-none {
   padding-bottom: 0 !important;
 }
+html body .padding-bottom-4 {
+  padding-bottom: 4px;
+}
 html body .padding-bottom-8 {
   padding-bottom: 8px;
 }
@@ -365,6 +422,9 @@ html body .padding-bottom-32 {
 }
 html body .padding-bottom-40 {
   padding-bottom: 40px;
+}
+html body .padding-bottom-force-4 {
+  padding-bottom: 4px !important;
 }
 html body .padding-bottom-force-8 {
   padding-bottom: 8px !important;
@@ -384,6 +444,9 @@ html body .padding-bottom-force-40 {
 html body .padding-left-none {
   padding-left: 0 !important;
 }
+html body .padding-left-4 {
+  padding-left: 4px;
+}
 html body .padding-left-8 {
   padding-left: 8px;
 }
@@ -398,6 +461,9 @@ html body .padding-left-32 {
 }
 html body .padding-left-40 {
   padding-left: 40px;
+}
+html body .padding-left-force-4 {
+  padding-left: 4px !important;
 }
 html body .padding-left-force-8 {
   padding-left: 8px !important;
