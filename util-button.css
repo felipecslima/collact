@@ -16,6 +16,9 @@ and open the template in the editor.
     Created on : 06/06/2017, 18:43:23
     Author     : felipelima
 */
+.md-button {
+  margin: 0;
+}
 html body md-menu-content {
   border-radius: 4px;
   background-color: #fafafa;
@@ -43,7 +46,6 @@ html body .md-button {
   color: #41918A;
   padding: 0 8px;
   font-family: "ProximaNovaSemiBold";
-  margin: 0;
   display: flex;
   justify-content: center;
   text-transform: none;
@@ -64,6 +66,14 @@ html body md-dialog .md-actions .md-button:not([disabled]).md-focused,
 html body md-dialog md-dialog-actions .md-button:not([disabled]).md-focused,
 html body .md-button:not([disabled]).md-focused {
   background-color: rgba(0, 0, 0, 0.05);
+}
+html body .details .md-button .md-ripple-container + .md-ripple-container,
+html body .infos-card .infos-text .md-button .md-ripple-container + .md-ripple-container,
+html body md-table-container table.md-table tbody tr td .md-button .md-ripple-container + .md-ripple-container,
+html body md-dialog .md-actions .md-button .md-ripple-container + .md-ripple-container,
+html body md-dialog md-dialog-actions .md-button .md-ripple-container + .md-ripple-container,
+html body .md-button .md-ripple-container + .md-ripple-container {
+  display: none !important;
 }
 html body .details .md-button md-icon,
 html body .infos-card .infos-text .md-button md-icon,
@@ -113,6 +123,17 @@ html body md-dialog .md-actions .md-button.icon md-icon + span,
 html body md-dialog md-dialog-actions .md-button.icon md-icon + span,
 html body .md-button.icon md-icon + span {
   margin-left: 8px;
+}
+html body .details .md-button.icon md-icon img,
+html body .infos-card .infos-text .md-button.icon md-icon img,
+html body md-table-container table.md-table tbody tr td .md-button.icon md-icon img,
+html body md-dialog .md-actions .md-button.icon md-icon img,
+html body md-dialog md-dialog-actions .md-button.icon md-icon img,
+html body .md-button.icon md-icon img {
+  width: 24px;
+  height: 24px;
+  vertical-align: super;
+  max-width: 100%;
 }
 html body .details .md-button.md-raised:not([disabled]),
 html body .infos-card .infos-text .md-button.md-raised:not([disabled]),
@@ -184,6 +205,37 @@ html body md-dialog .md-actions .md-button.md-raised:not([disabled]).dense,
 html body md-dialog md-dialog-actions .md-button.md-raised:not([disabled]).dense,
 html body .md-button.md-raised:not([disabled]).dense {
   height: 36px;
+}
+html body .details .md-button.md-raised:not([disabled]).transparent,
+html body .infos-card .infos-text .md-button.md-raised:not([disabled]).transparent,
+html body md-table-container table.md-table tbody tr td .md-button.md-raised:not([disabled]).transparent,
+html body md-dialog .md-actions .md-button.md-raised:not([disabled]).transparent,
+html body md-dialog md-dialog-actions .md-button.md-raised:not([disabled]).transparent,
+html body .md-button.md-raised:not([disabled]).transparent {
+  background-color: transparent;
+  color: #41918a;
+}
+html body .details .md-button.md-raised:not([disabled]).transparent:not([disabled]).md-raised.md-focused,
+html body .infos-card .infos-text .md-button.md-raised:not([disabled]).transparent:not([disabled]).md-raised.md-focused,
+html body md-table-container table.md-table tbody tr td .md-button.md-raised:not([disabled]).transparent:not([disabled]).md-raised.md-focused,
+html body md-dialog .md-actions .md-button.md-raised:not([disabled]).transparent:not([disabled]).md-raised.md-focused,
+html body md-dialog md-dialog-actions .md-button.md-raised:not([disabled]).transparent:not([disabled]).md-raised.md-focused,
+html body .md-button.md-raised:not([disabled]).transparent:not([disabled]).md-raised.md-focused,
+html body .details .md-button.md-raised:not([disabled]).transparent:hover,
+html body .infos-card .infos-text .md-button.md-raised:not([disabled]).transparent:hover,
+html body md-table-container table.md-table tbody tr td .md-button.md-raised:not([disabled]).transparent:hover,
+html body md-dialog .md-actions .md-button.md-raised:not([disabled]).transparent:hover,
+html body md-dialog md-dialog-actions .md-button.md-raised:not([disabled]).transparent:hover,
+html body .md-button.md-raised:not([disabled]).transparent:hover {
+  background: transparent;
+}
+html body .details .md-button.md-raised:not([disabled]).transparent.border,
+html body .infos-card .infos-text .md-button.md-raised:not([disabled]).transparent.border,
+html body md-table-container table.md-table tbody tr td .md-button.md-raised:not([disabled]).transparent.border,
+html body md-dialog .md-actions .md-button.md-raised:not([disabled]).transparent.border,
+html body md-dialog md-dialog-actions .md-button.md-raised:not([disabled]).transparent.border,
+html body .md-button.md-raised:not([disabled]).transparent.border {
+  border: solid 1px rgba(0, 0, 0, 0.16);
 }
 html body .details .md-button.md-raised:not([disabled]).logout,
 html body .infos-card .infos-text .md-button.md-raised:not([disabled]).logout,
